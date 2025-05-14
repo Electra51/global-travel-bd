@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global Travel BD</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <!-- navabr start -->
+    <header>
+      <nav>
+        <a href="./" class="logo">
+          <img src="./images/home-page-images/logo.svg" alt="Company Logo" />
+        </a>
+        <div class="nav_item">
+          <ul>
+            <li class="active">
+              <a href="./">Home</a>
+            </li>
+            <li>
+              <a href="./services.html">Services</a>
+            </li>
+            <li>
+              <a href="./tour-packages.html">Tour Packages</a>
+            </li>
+            <li>
+              <a href="./visa-requirements.html">Visa Requirements</a>
+            </li>
+            <li><a href="./about_us.html">About Us</a></li>
+          </ul>
+        </div>
+        <a href="./contact.html" style="text-decoration: none" class="nav-btn">
+          <button class="contact_btn">Contact Us</button>
+        </a>
+        <div class="nav_item_for_mobile">
+          <svg
+            onclick="toggleMobileMenu()"
+            class="hamburger_btn"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_138_806)">
+              <path
+                d="M4 4.5L20 4.5"
+                stroke="#002D72"
+                stroke-width="1.89583"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M4 14.5L20 14.5"
+                stroke="#002D72"
+                stroke-width="1.89583"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M4 9.5L20 9.5"
+                stroke="#002D72"
+                stroke-width="1.89583"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M4 19.5L20 19.5"
+                stroke="#002D72"
+                stroke-width="1.89583"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </g>
+            <defs>
+              <clipPath id="clip0_138_806">
+                <rect width="24" height="24" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+      </nav>
+    </header>
+    <!-- hero section start -->
+    <section class="hero" id="hero">
+      <img
+        src="./images/home-page-images/hero-left-pattern.svg"
+        alt="left background img"
+        class="left_background" />
+      <img
+        src="./images/home-page-images/hero-right-top-pattern.svg"
+        alt="right background img"
+        class="right_background" />
+      <img
+        src="./images/home-page-images/hero-left-bottom-pattern.svg"
+        alt="left bottom background img"
+        class="left_bottom_background" />
+      <img
+        src="./images/home-page-images/hero-right-bottom-pattern.svg"
+        alt="right background img"
+        class="right_bottom_background" />
+      <div class="hero_left">
+        <h2 class="hero_head_text">
+          Your Journey <br />
+          <span>Our Expertise</span>
+        </h2>
+        <p class="hero_details">
+          We make your visa journey smooth and simple — offering fast approvals,
+          expert guidance, and complete support so you can focus on your next
+          adventure, not the paperwork.
+        </p>
+        <a href="./appointment.html" style="text-decoration: none"
+          ><button class="book_btn">Book Appointment</button></a
+        >
+        <div class="stats">
+          <div class="stat">
+            <div class="stat_number">
+              <p>200K+</p>
+              <svg
+                width="21"
+                height="28"
+                viewBox="0 0 21 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0.332031 10.6457L1.79062 12.1008L9.30041 4.60857L9.30041 27.3359L11.3634 27.3359L11.3634 4.60857L18.8734 12.1008L20.332 10.6457L10.3319 0.669269L0.332031 10.6457Z"
+                  fill="#ea6724" />
+              </svg>
+            </div>
+            <p class="stat_p">Travelers Assisted</p>
+          </div>
+          <div class="stat">
+            <div class="stat_number">
+              <p>500+</p>
+              <svg
+                width="21"
+                height="28"
+                viewBox="0 0 21 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0.332031 10.6457L1.79062 12.1008L9.30041 4.60857L9.30041 27.3359L11.3634 27.3359L11.3634 4.60857L18.8734 12.1008L20.332 10.6457L10.3319 0.669269L0.332031 10.6457Z"
+                  fill="ea6724" />
+              </svg>
+            </div>
+            <p class="stat_p">Visa Types Processed</p>
+          </div>
+          <div class="stat">
+            <div class="stat_number">
+              <p>14+</p>
+              <svg
+                width="21"
+                height="28"
+                viewBox="0 0 21 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0.332031 10.6457L1.79062 12.1008L9.30041 4.60857L9.30041 27.3359L11.3634 27.3359L11.3634 4.60857L18.8734 12.1008L20.332 10.6457L10.3319 0.669269L0.332031 10.6457Z"
+                  fill="ea6724" />
+              </svg>
+            </div>
+            <p class="stat_p">Countries Served</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero_right">
+        <img
+          src="./images/home-page-images/hero-right-image.png"
+          alt="hero-right-logo" />
+      </div>
+    </section>
+    <!-- tour and visa requirements start -->
+    <section class="tour_and_visa_section" id="tour_and_visa_section">
+      <div class="tour-packages">
+        <p class="tour_visa_header">Tour Packages</p>
+        <div class="tour_visa_card">
+          <div class="tour_visa_card_img">
+            <img
+              src="./images/home-page-images/roman-holiday.png"
+              alt="Roman Holiday" />
+          </div>
+          <div class="tour_visa_card_content">
+            <p class="tour_visa_card_title">Roman Holiday Escape</p>
+            <p class="tour_visa_card_description">
+              Discover the timeless beauty of Rome with guided tours of ancient
+              ruins and charming piazzas ...
+              <span>SeeMore</span>
+            </p>
+          </div>
+        </div>
+        <div class="tour_visa_card">
+          <div class="tour_visa_card_img">
+            <img
+              src="./images/home-page-images/venice-dream.png"
+              alt="Roman Holiday" />
+          </div>
+          <div class="tour_visa_card_content">
+            <p class="tour_visa_card_title">Venice Dream Voyage</p>
+            <p class="tour_visa_card_description">
+              Glide through romantic canals, explore hidden alleyways, and
+              experience the magic of Venice ....
+              <span>SeeMore</span>
+            </p>
+          </div>
+        </div>
+        <div class="tour_visa_card">
+          <div class="tour_visa_card_img">
+            <img
+              src="./images/home-page-images/enchanting-europe.png"
+              alt="Roman Holiday" />
+          </div>
+          <div class="tour_visa_card_content">
+            <p class="tour_visa_card_title">Enchanting Europe Highlights</p>
+            <p class="tour_visa_card_description">
+              From Paris to Prague, explore iconic cities, rich history, and
+              breathtaking landscapes ....
+              <span>SeeMore</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="tour_visa_bar"></div>
+      <!-- Visa Requirements Section -->
+      <div class="visa-requirements">
+        <img
+          src="./images/home-page-images/tour-package-right-pattern.svg"
+          alt="left background img"
+          class="visa_left_background" />
+        <p class="tour_visa_header">Visa Requirements</p>
+        <div class="tour_visa_search_box">
+          <input type="text" placeholder="Search ..." />
+          <button class="search_icon">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M21 20.9992L16.7 16.6992"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <ul class="country-list">
+          <li>
+            Canada
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 22 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.293 0.960703C10.6591 0.594587 11.2381 0.571993 11.6309 0.892344L11.707 0.960703L21.04 10.2937C21.0449 10.2986 21.0489 10.3044 21.0537 10.3093C21.0675 10.3236 21.0809 10.3382 21.0938 10.3533C21.1014 10.3623 21.1089 10.3714 21.1162 10.3806C21.1496 10.4227 21.1797 10.4673 21.2061 10.5144C21.2117 10.5245 21.2174 10.5345 21.2227 10.5447C21.293 10.6815 21.3339 10.8363 21.334 11.0007C21.334 11.2743 21.2221 11.5213 21.0439 11.7019C21.0423 11.7035 21.0417 11.7062 21.04 11.7078L11.707 21.0418C11.3166 21.432 10.6834 21.432 10.293 21.0418C9.90251 20.6513 9.90265 20.0182 10.293 19.6277L17.9189 12.0007H1.66699C1.11471 12.0007 0.666992 11.553 0.666992 11.0007C0.667206 10.4486 1.11484 10.0007 1.66699 10.0007H17.9189L10.293 2.37477L10.2246 2.29859C9.90427 1.90584 9.9269 1.32682 10.293 0.960703Z"
+                fill="#002D72" />
+            </svg>
+          </li>
+          <li>
+            Brazil
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 22 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.293 0.960703C10.6591 0.594587 11.2381 0.571993 11.6309 0.892344L11.707 0.960703L21.04 10.2937C21.0449 10.2986 21.0489 10.3044 21.0537 10.3093C21.0675 10.3236 21.0809 10.3382 21.0938 10.3533C21.1014 10.3623 21.1089 10.3714 21.1162 10.3806C21.1496 10.4227 21.1797 10.4673 21.2061 10.5144C21.2117 10.5245 21.2174 10.5345 21.2227 10.5447C21.293 10.6815 21.3339 10.8363 21.334 11.0007C21.334 11.2743 21.2221 11.5213 21.0439 11.7019C21.0423 11.7035 21.0417 11.7062 21.04 11.7078L11.707 21.0418C11.3166 21.432 10.6834 21.432 10.293 21.0418C9.90251 20.6513 9.90265 20.0182 10.293 19.6277L17.9189 12.0007H1.66699C1.11471 12.0007 0.666992 11.553 0.666992 11.0007C0.667206 10.4486 1.11484 10.0007 1.66699 10.0007H17.9189L10.293 2.37477L10.2246 2.29859C9.90427 1.90584 9.9269 1.32682 10.293 0.960703Z"
+                fill="#002D72" />
+            </svg>
+          </li>
+          <li>
+            Japan
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 22 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.293 0.960703C10.6591 0.594587 11.2381 0.571993 11.6309 0.892344L11.707 0.960703L21.04 10.2937C21.0449 10.2986 21.0489 10.3044 21.0537 10.3093C21.0675 10.3236 21.0809 10.3382 21.0938 10.3533C21.1014 10.3623 21.1089 10.3714 21.1162 10.3806C21.1496 10.4227 21.1797 10.4673 21.2061 10.5144C21.2117 10.5245 21.2174 10.5345 21.2227 10.5447C21.293 10.6815 21.3339 10.8363 21.334 11.0007C21.334 11.2743 21.2221 11.5213 21.0439 11.7019C21.0423 11.7035 21.0417 11.7062 21.04 11.7078L11.707 21.0418C11.3166 21.432 10.6834 21.432 10.293 21.0418C9.90251 20.6513 9.90265 20.0182 10.293 19.6277L17.9189 12.0007H1.66699C1.11471 12.0007 0.666992 11.553 0.666992 11.0007C0.667206 10.4486 1.11484 10.0007 1.66699 10.0007H17.9189L10.293 2.37477L10.2246 2.29859C9.90427 1.90584 9.9269 1.32682 10.293 0.960703Z"
+                fill="#002D72" />
+            </svg>
+          </li>
+          <li>
+            Germany
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 22 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.293 0.960703C10.6591 0.594587 11.2381 0.571993 11.6309 0.892344L11.707 0.960703L21.04 10.2937C21.0449 10.2986 21.0489 10.3044 21.0537 10.3093C21.0675 10.3236 21.0809 10.3382 21.0938 10.3533C21.1014 10.3623 21.1089 10.3714 21.1162 10.3806C21.1496 10.4227 21.1797 10.4673 21.2061 10.5144C21.2117 10.5245 21.2174 10.5345 21.2227 10.5447C21.293 10.6815 21.3339 10.8363 21.334 11.0007C21.334 11.2743 21.2221 11.5213 21.0439 11.7019C21.0423 11.7035 21.0417 11.7062 21.04 11.7078L11.707 21.0418C11.3166 21.432 10.6834 21.432 10.293 21.0418C9.90251 20.6513 9.90265 20.0182 10.293 19.6277L17.9189 12.0007H1.66699C1.11471 12.0007 0.666992 11.553 0.666992 11.0007C0.667206 10.4486 1.11484 10.0007 1.66699 10.0007H17.9189L10.293 2.37477L10.2246 2.29859C9.90427 1.90584 9.9269 1.32682 10.293 0.960703Z"
+                fill="#002D72" />
+            </svg>
+          </li>
+          <li>
+            Australia
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 22 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.293 0.960703C10.6591 0.594587 11.2381 0.571993 11.6309 0.892344L11.707 0.960703L21.04 10.2937C21.0449 10.2986 21.0489 10.3044 21.0537 10.3093C21.0675 10.3236 21.0809 10.3382 21.0938 10.3533C21.1014 10.3623 21.1089 10.3714 21.1162 10.3806C21.1496 10.4227 21.1797 10.4673 21.2061 10.5144C21.2117 10.5245 21.2174 10.5345 21.2227 10.5447C21.293 10.6815 21.3339 10.8363 21.334 11.0007C21.334 11.2743 21.2221 11.5213 21.0439 11.7019C21.0423 11.7035 21.0417 11.7062 21.04 11.7078L11.707 21.0418C11.3166 21.432 10.6834 21.432 10.293 21.0418C9.90251 20.6513 9.90265 20.0182 10.293 19.6277L17.9189 12.0007H1.66699C1.11471 12.0007 0.666992 11.553 0.666992 11.0007C0.667206 10.4486 1.11484 10.0007 1.66699 10.0007H17.9189L10.293 2.37477L10.2246 2.29859C9.90427 1.90584 9.9269 1.32682 10.293 0.960703Z"
+                fill="#002D72" />
+            </svg>
+          </li>
+          <li>
+            France
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 22 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.293 0.960703C10.6591 0.594587 11.2381 0.571993 11.6309 0.892344L11.707 0.960703L21.04 10.2937C21.0449 10.2986 21.0489 10.3044 21.0537 10.3093C21.0675 10.3236 21.0809 10.3382 21.0938 10.3533C21.1014 10.3623 21.1089 10.3714 21.1162 10.3806C21.1496 10.4227 21.1797 10.4673 21.2061 10.5144C21.2117 10.5245 21.2174 10.5345 21.2227 10.5447C21.293 10.6815 21.3339 10.8363 21.334 11.0007C21.334 11.2743 21.2221 11.5213 21.0439 11.7019C21.0423 11.7035 21.0417 11.7062 21.04 11.7078L11.707 21.0418C11.3166 21.432 10.6834 21.432 10.293 21.0418C9.90251 20.6513 9.90265 20.0182 10.293 19.6277L17.9189 12.0007H1.66699C1.11471 12.0007 0.666992 11.553 0.666992 11.0007C0.667206 10.4486 1.11484 10.0007 1.66699 10.0007H17.9189L10.293 2.37477L10.2246 2.29859C9.90427 1.90584 9.9269 1.32682 10.293 0.960703Z"
+                fill="#002D72" />
+            </svg>
+          </li>
+          <li>
+            Mexico
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 22 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.293 0.960703C10.6591 0.594587 11.2381 0.571993 11.6309 0.892344L11.707 0.960703L21.04 10.2937C21.0449 10.2986 21.0489 10.3044 21.0537 10.3093C21.0675 10.3236 21.0809 10.3382 21.0938 10.3533C21.1014 10.3623 21.1089 10.3714 21.1162 10.3806C21.1496 10.4227 21.1797 10.4673 21.2061 10.5144C21.2117 10.5245 21.2174 10.5345 21.2227 10.5447C21.293 10.6815 21.3339 10.8363 21.334 11.0007C21.334 11.2743 21.2221 11.5213 21.0439 11.7019C21.0423 11.7035 21.0417 11.7062 21.04 11.7078L11.707 21.0418C11.3166 21.432 10.6834 21.432 10.293 21.0418C9.90251 20.6513 9.90265 20.0182 10.293 19.6277L17.9189 12.0007H1.66699C1.11471 12.0007 0.666992 11.553 0.666992 11.0007C0.667206 10.4486 1.11484 10.0007 1.66699 10.0007H17.9189L10.293 2.37477L10.2246 2.29859C9.90427 1.90584 9.9269 1.32682 10.293 0.960703Z"
+                fill="#002D72" />
+            </svg>
+          </li>
+          <li>
+            South Korea
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 22 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.293 0.960703C10.6591 0.594587 11.2381 0.571993 11.6309 0.892344L11.707 0.960703L21.04 10.2937C21.0449 10.2986 21.0489 10.3044 21.0537 10.3093C21.0675 10.3236 21.0809 10.3382 21.0938 10.3533C21.1014 10.3623 21.1089 10.3714 21.1162 10.3806C21.1496 10.4227 21.1797 10.4673 21.2061 10.5144C21.2117 10.5245 21.2174 10.5345 21.2227 10.5447C21.293 10.6815 21.3339 10.8363 21.334 11.0007C21.334 11.2743 21.2221 11.5213 21.0439 11.7019C21.0423 11.7035 21.0417 11.7062 21.04 11.7078L11.707 21.0418C11.3166 21.432 10.6834 21.432 10.293 21.0418C9.90251 20.6513 9.90265 20.0182 10.293 19.6277L17.9189 12.0007H1.66699C1.11471 12.0007 0.666992 11.553 0.666992 11.0007C0.667206 10.4486 1.11484 10.0007 1.66699 10.0007H17.9189L10.293 2.37477L10.2246 2.29859C9.90427 1.90584 9.9269 1.32682 10.293 0.960703Z"
+                fill="#002D72" />
+            </svg>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- other service section  -->
+    <section class="other_service">
+      <img
+        src="./images/home-page-images/other-service-right-pattern.png"
+        alt="right background img"
+        class="other_service_right_background" />
+      <h2 class="other_service_head_text">Other Services</h2>
+      <div class="other_service_details">
+        <div class="other_service_card">
+          <p class="other_service_card_head_text">
+            Affordable and reliable tour packages
+          </p>
+          <p class="other_service_card_text">
+            Explore the world without breaking the bank. Our trusted tour plans
+            ensure comfort, fun, and great value every step of the way.
+          </p>
+        </div>
+        <div class="other_service_card">
+          <p class="other_service_card_head_text">Visa application help</p>
+          <p class="other_service_card_text">
+            Worried about visa hassles? We’ve got you covered. From documents to
+            appointments, we guide you through every step with care.
+          </p>
+        </div>
+        <div class="other_service_card">
+          <p class="other_service_card_head_text">
+            Domestic & International Tickets
+          </p>
+          <p class="other_service_card_text">
+            Book flights across the country or around the globe in minutes. Best
+            prices, flexible options, and instant confirmation guaranteed.
+          </p>
+        </div>
+        <div class="other_service_card">
+          <p class="other_service_card_head_text">
+            Information about travel destinations
+          </p>
+          <p class="other_service_card_text">
+            Get to know your dream destinations before you go. We offer travel
+            tips, weather updates, must-see spots, and more.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- about us section  -->
+    <section class="about_section" id="about_section">
+      <img
+        src="./images/home-page-images/about-left-bottom.png"
+        alt="left background img"
+        class="about_left_background" />
+      <img
+        src="./images/home-page-images/about_right_bottom_pattern.png"
+        alt="left background img"
+        class="about_right_background" />
+      <div class="about_container">
+        <h2 class="other_service_head_text">About Us</h2>
+        <div class="about_details">
+          <div class="about_left">
+            <img
+              src="./images/home-page-images/about-section-left-image.png"
+              alt="" />
+          </div>
+          <div class="about_right">
+            <p class="about_right_text">
+              <span>
+                Global Travel is a trusted name in the travel industry, offering
+                end-to-end solutions for flights, tour packages, and visa
+                assistance. With years of experience and a customer-first
+                approach, we ensure every journey is smooth, affordable, and
+                unforgettable.
+              </span>
+              <br />
+              <br />
+              <span>
+                From weekend getaways to international adventures — Global
+                Travel brings the world closer to you. We specialize in
+                ticketing, tailor-made tours, and visa support, making travel
+                planning stress-free and enjoyable.
+              </span>
+              <br />
+              <br />
+              <span>
+                Planning your next trip? Global Travel has your back. With easy
+                booking, reliable service, and unbeatable prices, we make every
+                travel experience better — whether you're flying solo or in a
+                group.
+              </span>
+              <br />
+              <br />
+              <span>
+                Global Travel helps you fly farther and travel smarter. We offer
+                airline tickets, custom tours, and visa assistance — all under
+                one roof.
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer section -->
+    <footer class="footer_section" id="#hero">
+      <img
+        src="./images/home-page-images/footer-right-pattern.svg"
+        alt="right background img"
+        class="bg-footer-pattern" />
+      <div class="footer-container">
+        <div>
+          <a href="./" class="footer_logo" id="scrollToTopBtn">
+            <img
+              src="./images/home-page-images/logo.svg"
+              alt="Global Travel Logo" />
+          </a>
+        </div>
+
+        <div class="footer_quick_links">
+          <p class="footer_quick_text">Quick Links</p>
+          <ul>
+            <li><a href="#" id="scrollToTopBtn">Home</a></li>
+            <li><a href="#study_destination">Tour Packages</a></li>
+            <li><a href="./appointment.html">Services</a></li>
+            <li><a href="./contact.html">Visa Requirements</a></li>
+          </ul>
+        </div>
+        <div class="social-links">
+          <p class="contact">Connect With Us</p>
+          <div class="icons">
+            <img src="./images/home-page-images/insta.svg" alt="" />
+            <img src="./images/home-page-images/fb.svg" alt="" />
+            <img src="./images/home-page-images/linkedIn.svg" alt="" />
+            <img src="./images/home-page-images/x.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-container">
+          <p class="footer_bottom_p">Copyright © 2025 Global Travel</p>
+          <a href="#" class="scroll-top">
+            <svg
+              width="21"
+              height="28"
+              viewBox="0 0 21 28"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0.332031 10.6457L1.79062 12.1008L9.30041 4.60857L9.30041 27.3359L11.3634 27.3359L11.3634 4.60857L18.8734 12.1008L20.332 10.6457L10.3319 0.669269L0.332031 10.6457Z"
+                fill="#ea6724" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- Sidebar Menu -->
+    <div id="mobileMenu" class="mobile_menu">
+      <img
+        src="./images/home-page-images/footer-right-pattern-res.png"
+        alt="left background img"
+        class="mobile_footer_pattarn" />
+      <div class="menu_header">
+        <img
+          src="./images/home-page-images/logo.svg"
+          alt="Global Travels Logo"
+          class="mobile-logo" />
+
+        <svg
+          onclick="toggleMobileMenu()"
+          class="close_btn"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M2.4384 2.43847C2.74853 2.12835 3.25133 2.12835 3.56146 2.43847L11.9999 10.8769L20.4384 2.43848C20.7485 2.12835 21.2513 2.12835 21.5615 2.43848C21.8716 2.7486 21.8716 3.25141 21.5615 3.56153L13.123 12L21.5615 20.4385C21.8716 20.7486 21.8716 21.2514 21.5615 21.5615C21.2513 21.8716 20.7485 21.8716 20.4384 21.5615L11.9999 13.1231L3.56145 21.5615C3.25133 21.8716 2.74852 21.8716 2.4384 21.5615C2.12828 21.2514 2.12828 20.7486 2.4384 20.4385L10.8769 12L2.4384 3.56153C2.12828 3.2514 2.12828 2.7486 2.4384 2.43847Z"
+            fill="#002D72" />
+        </svg>
+      </div>
+      <ul class="menu_list">
+        <li class="active">
+          <a href="./">Home</a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-a"
+            >Services
+            <svg
+              width="21"
+              height="21"
+              viewBox="0 0 21 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M5.625 8L10.625 13L15.625 8"
+                stroke="#505673"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+          <div class="dropdown_menu">
+            <div class="column">
+              <h4>Countries</h4>
+              <a href="./study_uk.html">Study in UK</a>
+              <a href="./study_belgium.html">Study in Belgium</a>
+              <a href="./study_nederland.html">Study in Nederland</a>
+              <a href="./study_finland.html">Study in Finland</a>
+              <a href="./study_portugal.html">Study in Portugal</a>
+            </div>
+
+            <div class="column">
+              <h4>Subjects</h4>
+              <a href="./business_studies.html">Business Studies</a>
+              <a href="./accounting.html">Accounting</a>
+              <a href="./engineering.html">Engineering</a>
+              <a href="./cse.html">CSE</a>
+              <a href="./mechanical_engineering.html">Mechanical Engineering</a>
+            </div>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-a" href="#"
+            >Tour Packages
+            <svg
+              width="21"
+              height="21"
+              viewBox="0 0 21 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M5.625 8L10.625 13L15.625 8"
+                stroke="#505673"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+          <div class="dropdown_menu_list">
+            <div class="dropdown-list">
+              <a href="https://www.globalreach.in/index.php">Global Reach</a>
+              <a href="./scholarships.html">Scholarships</a>
+              <a href="./benefits_studying_abroad.html"
+                >Benefits of Studying Abroad</a
+              >
+            </div>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-a" href="#"
+            >Visa Requirements
+            <svg
+              width="21"
+              height="21"
+              viewBox="0 0 21 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M5.625 8L10.625 13L15.625 8"
+                stroke="#505673"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+          <div class="dropdown_menu_list">
+            <div class="dropdown-list">
+              <a href="./skill_migration.html">Skill Migration</a>
+              <a href="./business_migration.html">Business Migration</a>
+              <a href="./permanent_resident.html">Permanent Resident/PR</a>
+              <a href="./programs.html">Programs</a>
+              <a href="./immigration_destination.html"
+                >Immigration Destination</a
+              >
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <a href="./about_us.html" onclick="toggleMobileMenu()">About Us</a>
+        </li>
+      </ul>
+    </div>
+    <script>
+      const countriesBtn = document.getElementById("countriesBtn");
+      const coursesBtn = document.getElementById("coursesBtn");
+      const countriesContent = document.getElementById("countriesContent");
+      const coursesContent = document.getElementById("coursesContent");
+
+      countriesBtn.addEventListener("click", () => {
+        countriesContent.classList.add("active");
+        coursesContent.classList.remove("active");
+        countriesBtn.className = "study_btn";
+        coursesBtn.className = "study_btn2";
+      });
+
+      coursesBtn.addEventListener("click", () => {
+        countriesContent.classList.remove("active");
+        coursesContent.classList.add("active");
+        coursesBtn.className = "study_btn";
+        countriesBtn.className = "study_btn2";
+      });
+
+      function toggleMobileMenu() {
+        const menu = document.getElementById("mobileMenu");
+        menu.classList.toggle("open");
+      }
+      document
+        .getElementById("scrollToTopBtn")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const dropdownLinks = document.querySelectorAll(".dropdown-a");
+        dropdownLinks.forEach((link) => {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const parentDropdown = this.parentElement;
+            const dropdownMenu = parentDropdown.querySelector(
+              ".dropdown_menu, .dropdown_menu_list"
+            );
+
+            // close dropdowns
+            document
+              .querySelectorAll(".dropdown_menu, .dropdown_menu_list")
+              .forEach((menu) => {
+                if (menu !== dropdownMenu) {
+                  menu.style.display = "none";
+                }
+              });
+
+            // toggle dropdown
+            if (dropdownMenu.style.display === "flex") {
+              dropdownMenu.style.display = "none";
+            } else {
+              dropdownMenu.style.display = "flex";
+            }
+          });
+        });
+
+        // close dropdown clicking outside
+        document.addEventListener("click", function (e) {
+          if (!e.target.closest(".dropdown")) {
+            document
+              .querySelectorAll(".dropdown_menu, .dropdown_menu_list")
+              .forEach((menu) => {
+                menu.style.display = "none";
+              });
+          }
+        });
+      });
+      const dropdownItems = document.querySelectorAll(".dropdown-a");
+    </script>
+  </body>
+</html>
