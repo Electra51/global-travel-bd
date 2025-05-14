@@ -36,7 +36,34 @@
             <li>
               <a href="./visa-requirements.html">Visa Requirements</a>
             </li>
-            <li><a href="./about_us.html">About Us</a></li>
+
+            <li class="dropdown">
+              <a class="dropdown-a" href="#"
+                >About Global
+                <svg
+                  width="21"
+                  height="21"
+                  viewBox="0 0 21 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5.625 8L10.625 13L15.625 8"
+                    stroke="#505673"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+              <div class="dropdown_menu_list">
+                <div class="dropdown-list">
+                  <a href="./about.html">About Us</a>
+                  <a href="./mission.html">Our Mission</a>
+                  <a href="./chief-advisor.html">Chief Advisor</a>
+                  <a href="./ceo.html">CEO</a>
+                  <a href="./organogram.html">Official organogram</a>
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
         <a href="./contact.html" style="text-decoration: none" class="nav-btn">
@@ -145,7 +172,7 @@
                 xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M0.332031 10.6457L1.79062 12.1008L9.30041 4.60857L9.30041 27.3359L11.3634 27.3359L11.3634 4.60857L18.8734 12.1008L20.332 10.6457L10.3319 0.669269L0.332031 10.6457Z"
-                  fill="ea6724" />
+                  fill="#ea6724" />
               </svg>
             </div>
             <p class="stat_p">Visa Types Processed</p>
@@ -641,7 +668,9 @@
         </li>
 
         <li>
-          <a href="./about_us.html" onclick="toggleMobileMenu()">About Us</a>
+          <a href="./about_us.html" onclick="toggleMobileMenu()"
+            >About Global</a
+          >
         </li>
       </ul>
     </div>
@@ -681,44 +710,39 @@
 
       document.addEventListener("DOMContentLoaded", function () {
         const dropdownLinks = document.querySelectorAll(".dropdown-a");
+
         dropdownLinks.forEach((link) => {
           link.addEventListener("click", function (e) {
             e.preventDefault();
+            e.stopPropagation();
+
             const parentDropdown = this.parentElement;
             const dropdownMenu = parentDropdown.querySelector(
-              ".dropdown_menu, .dropdown_menu_list"
+              ".dropdown_menu_list"
             );
 
-            // close dropdowns
-            document
-              .querySelectorAll(".dropdown_menu, .dropdown_menu_list")
-              .forEach((menu) => {
-                if (menu !== dropdownMenu) {
-                  menu.style.display = "none";
-                }
-              });
+            // Close all other dropdowns
+            document.querySelectorAll(".dropdown_menu_list").forEach((menu) => {
+              if (menu !== dropdownMenu) {
+                menu.style.display = "none";
+              }
+            });
 
-            // toggle dropdown
-            if (dropdownMenu.style.display === "flex") {
-              dropdownMenu.style.display = "none";
-            } else {
-              dropdownMenu.style.display = "flex";
-            }
+            // Toggle current
+            dropdownMenu.style.display =
+              dropdownMenu.style.display === "flex" ? "none" : "flex";
           });
         });
 
-        // close dropdown clicking outside
+        // Close on outside click
         document.addEventListener("click", function (e) {
           if (!e.target.closest(".dropdown")) {
-            document
-              .querySelectorAll(".dropdown_menu, .dropdown_menu_list")
-              .forEach((menu) => {
-                menu.style.display = "none";
-              });
+            document.querySelectorAll(".dropdown_menu_list").forEach((menu) => {
+              menu.style.display = "none";
+            });
           }
         });
       });
-      const dropdownItems = document.querySelectorAll(".dropdown-a");
     </script>
   </body>
 </html>

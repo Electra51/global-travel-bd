@@ -4,7 +4,6 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
 :root {
   --color-primary: #002d72;
   --color-secondary: #2d2d2d;
@@ -14,13 +13,11 @@
   --color-headerMobile: #fff9f3;
   --color-spanText: #7c7c7c;
 }
-
 html {
   scroll-behavior: smooth;
   scrollbar-color: #002d72 #fefaf8;
   /* :#fefaf8 ; */
 }
-
 /* navbar */
 header {
   height: 81px;
@@ -102,6 +99,58 @@ nav {
 .mobile_menu {
   display: none;
 }
+.dropdown {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  position: relative;
+}
+.dropdown-a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+.dropdown_menu_list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  background: #f1f6fd;
+  border: 1px solid #4261de;
+  margin-top: 0px;
+  border-radius: 20px;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.dropdown_menu_list .dropdown-list h4 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 180%;
+  letter-spacing: 0%;
+  color: #505673;
+}
+.dropdown_menu_list .dropdown-list {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 30px;
+}
+/* .dropdown:hover > a svg path {
+  stroke: #4261de;
+} */
+.dropdown_menu_list .dropdown-list a:hover {
+  color: #4261de;
+}
+.dropdown_menu_list .dropdown-list a {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  color: #505673;
+  text-wrap: nowrap;
+  margin-top: 10px;
+}
+
 /* navbar style end */
 
 .hero {
@@ -252,7 +301,8 @@ nav {
 .tour_visa_card {
   height: 255px;
   width: 530px;
-  border-radius: 12px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
   margin-bottom: 20px;
 }
 .tour_visa_card_img {
@@ -699,7 +749,7 @@ footer {
     left: -100%;
     width: 100%;
     height: 100vh;
-    /* background-image: url(../images/mobile_menu_bg.png); */
+    /* background-image: url(../images/home-page-images/hero-area-mobile.png); */
     background-color: var(--color-mobileMenubg);
     box-shadow: 4px 0 12px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -769,7 +819,7 @@ footer {
     display: none;
   }
   .hero {
-    background-image: url(../images/Hero_for_mobile.png);
+    background-image: url(../images/home-page-images/hero-area-mobile.png);
     margin-top: 17px;
     max-width: 343px;
     height: 389px;
@@ -832,10 +882,138 @@ footer {
     letter-spacing: 0%;
     text-align: center;
   }
-  /* study section */
+  /* tour and visa section */
   .tour_and_visa_section {
     max-width: 343px;
-    margin: 40px auto 0 auto;
+    margin: 50px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+  }
+  .tour_visa_bar {
+    border-right: 1px dashed #bbbbbb;
+    display: none;
+  }
+  .tour-packages,
+  .visa-requirements {
+    flex: 1;
+    max-width: 343px;
+  }
+  .tour_visa_header {
+    font-size: 26px;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  .tour_visa_card {
+    height: 241px;
+    width: 343px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-bottom: 16px;
+    background: #fefefe;
+    border: 1px solid red;
+  }
+  .tour_visa_card_img {
+    width: 343px;
+    height: 142px;
+    border-radius: 10px;
+  }
+  .tour_visa_card_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .tour_visa_card_content {
+    margin-top: 12px;
+    margin-bottom: 0px;
+  }
+  .tour_visa_card_title {
+    font-size: 20px;
+  }
+  .tour_visa_card_description {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .tour_visa_card_description span {
+    font-size: 15px;
+  }
+  .tour_visa_search_box {
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 12px 0px #0d0a2c0f;
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    height: 60px;
+  }
+  .tour_visa_search_box input::placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: var(--color-primary);
+  }
+  input:focus {
+    outline: none;
+  }
+  .tour_visa_search_box input {
+    flex: 1;
+    border: none;
+    padding: 0px 16px;
+    font-size: 14px;
+  }
+  .search_icon {
+    background: linear-gradient(
+      38.41deg,
+      #ea6624 36.95%,
+      #ea6624 50.94%,
+      #eb6f22 58.97%,
+      #ef871c 72%,
+      #f08d1a 74.71%
+    );
+    height: 60px;
+    width: 60px;
+    border: none;
+    cursor: pointer;
+    border-bottom-left-radius: 32px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .visa_left_background {
+    position: absolute;
+    top: 1300px;
+    right: 0;
+  }
+  .country-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+  }
+  .country-list li {
+    height: 64px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 12px;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    color: var(--color-primary);
+    background-color: white;
+    letter-spacing: 0%;
+    cursor: pointer;
+    transition: background 0.2s;
+    z-index: 99;
+    position: relative;
+  }
+  .country-list li:hover {
+    background-color: var(--color-headerMobile);
   }
   /* other service section */
   .other_service {
