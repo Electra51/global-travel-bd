@@ -6,6 +6,10 @@
     <title>Global Travel BD</title>
     <!-- css -->
     <link rel="stylesheet" href="css/styles.css" />
+    <!-- Bootstrap CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,51 +21,77 @@
   </head>
   <body>
     <!-- navabr start -->
+
     <header>
       <nav>
         <a href="./" class="logo">
           <img src="./images/home-page-images/logo.svg" alt="Company Logo" />
         </a>
         <div class="nav_item">
-          <ul>
+          <ul class="nav_item-ul">
             <li class="active">
-              <a href="./">Home</a>
+              <a class="nav_item-ul-li-a" href="./">Home</a>
             </li>
             <li>
-              <a href="./services.html">Services</a>
+              <a class="nav_item-ul-li-a" href="./services.html">Services</a>
             </li>
             <li>
-              <a href="./tour-packages.html">Tour Packages</a>
+              <a class="nav_item-ul-li-a" href="./tour-packages.html"
+                >Tour Packages</a
+              >
             </li>
             <li>
-              <a href="./visa-requirements.html">Visa Requirements</a>
+              <a class="nav_item-ul-li-a" href="./visa-requirements.html"
+                >Visa Requirements</a
+              >
             </li>
-
-            <li class="dropdown">
-              <a class="dropdown-a" href="#"
-                >About Global
-                <svg
-                  width="21"
-                  height="21"
-                  viewBox="0 0 21 21"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M5.625 8L10.625 13L15.625 8"
-                    stroke="#505673"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-              </a>
-              <div class="dropdown_menu_list">
-                <div class="dropdown-list">
-                  <a href="./about.html">About Us</a>
-                  <a href="./mission.html">Our Mission</a>
-                  <a href="./chief-advisor.html">Chief Advisor</a>
-                  <a href="./ceo.html">CEO</a>
-                  <a href="./organogram.html">Official organogram</a>
-                </div>
+            <li>
+              <div class="dropdown">
+                <a
+                  class="nav_item-ul-li-a"
+                  class="dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  About Global
+                  <svg
+                    width="21"
+                    height="21"
+                    viewBox="0 0 21 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5.625 8L10.625 13L15.625 8"
+                      stroke="#505673"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./about.html">About Us</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./mission.html"
+                      >Our Mission</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./chief-advisor.html"
+                      >Chief Advisor</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./ceo.html">CEO</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./organogram.html"
+                      >Official organogram</a
+                    >
+                  </li>
+                </ul>
               </div>
             </li>
           </ul>
@@ -283,112 +313,7 @@
             </svg>
           </button>
         </div>
-        <ul class="country-list">
-          <li>
-            Canada
-            <svg
-              width="22"
-              height="22"
-              viewBox="0 0 22 22"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M10.293 0.960703C10.6591 0.594587 11.2381 0.571993 11.6309 0.892344L11.707 0.960703L21.04 10.2937C21.0449 10.2986 21.0489 10.3044 21.0537 10.3093C21.0675 10.3236 21.0809 10.3382 21.0938 10.3533C21.1014 10.3623 21.1089 10.3714 21.1162 10.3806C21.1496 10.4227 21.1797 10.4673 21.2061 10.5144C21.2117 10.5245 21.2174 10.5345 21.2227 10.5447C21.293 10.6815 21.3339 10.8363 21.334 11.0007C21.334 11.2743 21.2221 11.5213 21.0439 11.7019C21.0423 11.7035 21.0417 11.7062 21.04 11.7078L11.707 21.0418C11.3166 21.432 10.6834 21.432 10.293 21.0418C9.90251 20.6513 9.90265 20.0182 10.293 19.6277L17.9189 12.0007H1.66699C1.11471 12.0007 0.666992 11.553 0.666992 11.0007C0.667206 10.4486 1.11484 10.0007 1.66699 10.0007H17.9189L10.293 2.37477L10.2246 2.29859C9.90427 1.90584 9.9269 1.32682 10.293 0.960703Z"
-                fill="#002D72" />
-            </svg>
-          </li>
-          <li>
-            Brazil
-            <svg
-              width="22"
-              height="22"
-              viewBox="0 0 22 22"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M10.293 0.960703C10.6591 0.594587 11.2381 0.571993 11.6309 0.892344L11.707 0.960703L21.04 10.2937C21.0449 10.2986 21.0489 10.3044 21.0537 10.3093C21.0675 10.3236 21.0809 10.3382 21.0938 10.3533C21.1014 10.3623 21.1089 10.3714 21.1162 10.3806C21.1496 10.4227 21.1797 10.4673 21.2061 10.5144C21.2117 10.5245 21.2174 10.5345 21.2227 10.5447C21.293 10.6815 21.3339 10.8363 21.334 11.0007C21.334 11.2743 21.2221 11.5213 21.0439 11.7019C21.0423 11.7035 21.0417 11.7062 21.04 11.7078L11.707 21.0418C11.3166 21.432 10.6834 21.432 10.293 21.0418C9.90251 20.6513 9.90265 20.0182 10.293 19.6277L17.9189 12.0007H1.66699C1.11471 12.0007 0.666992 11.553 0.666992 11.0007C0.667206 10.4486 1.11484 10.0007 1.66699 10.0007H17.9189L10.293 2.37477L10.2246 2.29859C9.90427 1.90584 9.9269 1.32682 10.293 0.960703Z"
-                fill="#002D72" />
-            </svg>
-          </li>
-          <li>
-            Japan
-            <svg
-              width="22"
-              height="22"
-              viewBox="0 0 22 22"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M10.293 0.960703C10.6591 0.594587 11.2381 0.571993 11.6309 0.892344L11.707 0.960703L21.04 10.2937C21.0449 10.2986 21.0489 10.3044 21.0537 10.3093C21.0675 10.3236 21.0809 10.3382 21.0938 10.3533C21.1014 10.3623 21.1089 10.3714 21.1162 10.3806C21.1496 10.4227 21.1797 10.4673 21.2061 10.5144C21.2117 10.5245 21.2174 10.5345 21.2227 10.5447C21.293 10.6815 21.3339 10.8363 21.334 11.0007C21.334 11.2743 21.2221 11.5213 21.0439 11.7019C21.0423 11.7035 21.0417 11.7062 21.04 11.7078L11.707 21.0418C11.3166 21.432 10.6834 21.432 10.293 21.0418C9.90251 20.6513 9.90265 20.0182 10.293 19.6277L17.9189 12.0007H1.66699C1.11471 12.0007 0.666992 11.553 0.666992 11.0007C0.667206 10.4486 1.11484 10.0007 1.66699 10.0007H17.9189L10.293 2.37477L10.2246 2.29859C9.90427 1.90584 9.9269 1.32682 10.293 0.960703Z"
-                fill="#002D72" />
-            </svg>
-          </li>
-          <li>
-            Germany
-            <svg
-              width="22"
-              height="22"
-              viewBox="0 0 22 22"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M10.293 0.960703C10.6591 0.594587 11.2381 0.571993 11.6309 0.892344L11.707 0.960703L21.04 10.2937C21.0449 10.2986 21.0489 10.3044 21.0537 10.3093C21.0675 10.3236 21.0809 10.3382 21.0938 10.3533C21.1014 10.3623 21.1089 10.3714 21.1162 10.3806C21.1496 10.4227 21.1797 10.4673 21.2061 10.5144C21.2117 10.5245 21.2174 10.5345 21.2227 10.5447C21.293 10.6815 21.3339 10.8363 21.334 11.0007C21.334 11.2743 21.2221 11.5213 21.0439 11.7019C21.0423 11.7035 21.0417 11.7062 21.04 11.7078L11.707 21.0418C11.3166 21.432 10.6834 21.432 10.293 21.0418C9.90251 20.6513 9.90265 20.0182 10.293 19.6277L17.9189 12.0007H1.66699C1.11471 12.0007 0.666992 11.553 0.666992 11.0007C0.667206 10.4486 1.11484 10.0007 1.66699 10.0007H17.9189L10.293 2.37477L10.2246 2.29859C9.90427 1.90584 9.9269 1.32682 10.293 0.960703Z"
-                fill="#002D72" />
-            </svg>
-          </li>
-          <li>
-            Australia
-            <svg
-              width="22"
-              height="22"
-              viewBox="0 0 22 22"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M10.293 0.960703C10.6591 0.594587 11.2381 0.571993 11.6309 0.892344L11.707 0.960703L21.04 10.2937C21.0449 10.2986 21.0489 10.3044 21.0537 10.3093C21.0675 10.3236 21.0809 10.3382 21.0938 10.3533C21.1014 10.3623 21.1089 10.3714 21.1162 10.3806C21.1496 10.4227 21.1797 10.4673 21.2061 10.5144C21.2117 10.5245 21.2174 10.5345 21.2227 10.5447C21.293 10.6815 21.3339 10.8363 21.334 11.0007C21.334 11.2743 21.2221 11.5213 21.0439 11.7019C21.0423 11.7035 21.0417 11.7062 21.04 11.7078L11.707 21.0418C11.3166 21.432 10.6834 21.432 10.293 21.0418C9.90251 20.6513 9.90265 20.0182 10.293 19.6277L17.9189 12.0007H1.66699C1.11471 12.0007 0.666992 11.553 0.666992 11.0007C0.667206 10.4486 1.11484 10.0007 1.66699 10.0007H17.9189L10.293 2.37477L10.2246 2.29859C9.90427 1.90584 9.9269 1.32682 10.293 0.960703Z"
-                fill="#002D72" />
-            </svg>
-          </li>
-          <li>
-            France
-            <svg
-              width="22"
-              height="22"
-              viewBox="0 0 22 22"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M10.293 0.960703C10.6591 0.594587 11.2381 0.571993 11.6309 0.892344L11.707 0.960703L21.04 10.2937C21.0449 10.2986 21.0489 10.3044 21.0537 10.3093C21.0675 10.3236 21.0809 10.3382 21.0938 10.3533C21.1014 10.3623 21.1089 10.3714 21.1162 10.3806C21.1496 10.4227 21.1797 10.4673 21.2061 10.5144C21.2117 10.5245 21.2174 10.5345 21.2227 10.5447C21.293 10.6815 21.3339 10.8363 21.334 11.0007C21.334 11.2743 21.2221 11.5213 21.0439 11.7019C21.0423 11.7035 21.0417 11.7062 21.04 11.7078L11.707 21.0418C11.3166 21.432 10.6834 21.432 10.293 21.0418C9.90251 20.6513 9.90265 20.0182 10.293 19.6277L17.9189 12.0007H1.66699C1.11471 12.0007 0.666992 11.553 0.666992 11.0007C0.667206 10.4486 1.11484 10.0007 1.66699 10.0007H17.9189L10.293 2.37477L10.2246 2.29859C9.90427 1.90584 9.9269 1.32682 10.293 0.960703Z"
-                fill="#002D72" />
-            </svg>
-          </li>
-          <li>
-            Mexico
-            <svg
-              width="22"
-              height="22"
-              viewBox="0 0 22 22"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M10.293 0.960703C10.6591 0.594587 11.2381 0.571993 11.6309 0.892344L11.707 0.960703L21.04 10.2937C21.0449 10.2986 21.0489 10.3044 21.0537 10.3093C21.0675 10.3236 21.0809 10.3382 21.0938 10.3533C21.1014 10.3623 21.1089 10.3714 21.1162 10.3806C21.1496 10.4227 21.1797 10.4673 21.2061 10.5144C21.2117 10.5245 21.2174 10.5345 21.2227 10.5447C21.293 10.6815 21.3339 10.8363 21.334 11.0007C21.334 11.2743 21.2221 11.5213 21.0439 11.7019C21.0423 11.7035 21.0417 11.7062 21.04 11.7078L11.707 21.0418C11.3166 21.432 10.6834 21.432 10.293 21.0418C9.90251 20.6513 9.90265 20.0182 10.293 19.6277L17.9189 12.0007H1.66699C1.11471 12.0007 0.666992 11.553 0.666992 11.0007C0.667206 10.4486 1.11484 10.0007 1.66699 10.0007H17.9189L10.293 2.37477L10.2246 2.29859C9.90427 1.90584 9.9269 1.32682 10.293 0.960703Z"
-                fill="#002D72" />
-            </svg>
-          </li>
-          <li>
-            South Korea
-            <svg
-              width="22"
-              height="22"
-              viewBox="0 0 22 22"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M10.293 0.960703C10.6591 0.594587 11.2381 0.571993 11.6309 0.892344L11.707 0.960703L21.04 10.2937C21.0449 10.2986 21.0489 10.3044 21.0537 10.3093C21.0675 10.3236 21.0809 10.3382 21.0938 10.3533C21.1014 10.3623 21.1089 10.3714 21.1162 10.3806C21.1496 10.4227 21.1797 10.4673 21.2061 10.5144C21.2117 10.5245 21.2174 10.5345 21.2227 10.5447C21.293 10.6815 21.3339 10.8363 21.334 11.0007C21.334 11.2743 21.2221 11.5213 21.0439 11.7019C21.0423 11.7035 21.0417 11.7062 21.04 11.7078L11.707 21.0418C11.3166 21.432 10.6834 21.432 10.293 21.0418C9.90251 20.6513 9.90265 20.0182 10.293 19.6277L17.9189 12.0007H1.66699C1.11471 12.0007 0.666992 11.553 0.666992 11.0007C0.667206 10.4486 1.11484 10.0007 1.66699 10.0007H17.9189L10.293 2.37477L10.2246 2.29859C9.90427 1.90584 9.9269 1.32682 10.293 0.960703Z"
-                fill="#002D72" />
-            </svg>
-          </li>
-        </ul>
+        <div class="accordion country-list" id="accordionExample"></div>
       </div>
     </section>
     <!-- other service section  -->
@@ -509,8 +434,7 @@
           <div class="icons">
             <img src="./images/home-page-images/insta.svg" alt="" />
             <img src="./images/home-page-images/fb.svg" alt="" />
-            <img src="./images/home-page-images/linkedIn.svg" alt="" />
-            <img src="./images/home-page-images/x.svg" alt="" />
+            <img src="./images/home-page-images/you-tube.svg" alt="" />
           </div>
         </div>
         <div class="footer_quick_links">
@@ -527,8 +451,7 @@
           <div class="icons">
             <img src="./images/home-page-images/insta.svg" alt="" />
             <img src="./images/home-page-images/fb.svg" alt="" />
-            <img src="./images/home-page-images/linkedIn.svg" alt="" />
-            <img src="./images/home-page-images/x.svg" alt="" />
+            <img src="./images/home-page-images/you-tube.svg" alt="" />
           </div>
         </div>
       </div>
@@ -581,176 +504,67 @@
         <li class="active">
           <a href="./">Home</a>
         </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-a"
-            >Services
-            <svg
-              width="21"
-              height="21"
-              viewBox="0 0 21 21"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M5.625 8L10.625 13L15.625 8"
-                stroke="#505673"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
-          </a>
-          <div class="dropdown_menu">
-            <div class="column">
-              <h4>Countries</h4>
-              <a href="./study_uk.html">Study in UK</a>
-              <a href="./study_belgium.html">Study in Belgium</a>
-              <a href="./study_nederland.html">Study in Nederland</a>
-              <a href="./study_finland.html">Study in Finland</a>
-              <a href="./study_portugal.html">Study in Portugal</a>
-            </div>
-
-            <div class="column">
-              <h4>Subjects</h4>
-              <a href="./business_studies.html">Business Studies</a>
-              <a href="./accounting.html">Accounting</a>
-              <a href="./engineering.html">Engineering</a>
-              <a href="./cse.html">CSE</a>
-              <a href="./mechanical_engineering.html">Mechanical Engineering</a>
-            </div>
-          </div>
+        <li>
+          <a href="./">Services</a>
         </li>
-        <li class="dropdown">
-          <a class="dropdown-a" href="#"
-            >Tour Packages
-            <svg
-              width="21"
-              height="21"
-              viewBox="0 0 21 21"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M5.625 8L10.625 13L15.625 8"
-                stroke="#505673"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
-          </a>
-          <div class="dropdown_menu_list">
-            <div class="dropdown-list">
-              <a href="https://www.globalreach.in/index.php">Global Reach</a>
-              <a href="./scholarships.html">Scholarships</a>
-              <a href="./benefits_studying_abroad.html"
-                >Benefits of Studying Abroad</a
-              >
-            </div>
-          </div>
+        <li>
+          <a href="./">Tour Packages</a>
         </li>
-        <li class="dropdown">
-          <a class="dropdown-a" href="#"
-            >Visa Requirements
-            <svg
-              width="21"
-              height="21"
-              viewBox="0 0 21 21"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M5.625 8L10.625 13L15.625 8"
-                stroke="#505673"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
-          </a>
-          <div class="dropdown_menu_list">
-            <div class="dropdown-list">
-              <a href="./skill_migration.html">Skill Migration</a>
-              <a href="./business_migration.html">Business Migration</a>
-              <a href="./permanent_resident.html">Permanent Resident/PR</a>
-              <a href="./programs.html">Programs</a>
-              <a href="./immigration_destination.html"
-                >Immigration Destination</a
-              >
-            </div>
-          </div>
+        <li>
+          <a href="./">Visa Requirements</a>
         </li>
 
         <li>
-          <a href="./about_us.html" onclick="toggleMobileMenu()"
-            >About Global</a
-          >
+          <div class="dropdown">
+            <a
+              class="nav_item-ul-li-a"
+              class="dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false">
+              About Global
+              <svg
+                width="21"
+                height="21"
+                viewBox="0 0 21 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M5.625 8L10.625 13L15.625 8"
+                  stroke="#505673"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="./about.html">About Us</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./mission.html">Our Mission</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./chief-advisor.html"
+                  >Chief Advisor</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./ceo.html">CEO</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./organogram.html"
+                  >Official organogram</a
+                >
+              </li>
+            </ul>
+          </div>
         </li>
       </ul>
     </div>
-    <script>
-      const countriesBtn = document.getElementById("countriesBtn");
-      const coursesBtn = document.getElementById("coursesBtn");
-      const countriesContent = document.getElementById("countriesContent");
-      const coursesContent = document.getElementById("coursesContent");
-
-      countriesBtn.addEventListener("click", () => {
-        countriesContent.classList.add("active");
-        coursesContent.classList.remove("active");
-        countriesBtn.className = "study_btn";
-        coursesBtn.className = "study_btn2";
-      });
-
-      coursesBtn.addEventListener("click", () => {
-        countriesContent.classList.remove("active");
-        coursesContent.classList.add("active");
-        coursesBtn.className = "study_btn";
-        countriesBtn.className = "study_btn2";
-      });
-
-      function toggleMobileMenu() {
-        const menu = document.getElementById("mobileMenu");
-        menu.classList.toggle("open");
-      }
-      document
-        .getElementById("scrollToTopBtn")
-        .addEventListener("click", function (event) {
-          event.preventDefault();
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-          });
-        });
-
-      document.addEventListener("DOMContentLoaded", function () {
-        const dropdownLinks = document.querySelectorAll(".dropdown-a");
-
-        dropdownLinks.forEach((link) => {
-          link.addEventListener("click", function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            const parentDropdown = this.parentElement;
-            const dropdownMenu = parentDropdown.querySelector(
-              ".dropdown_menu_list"
-            );
-
-            // Close all other dropdowns
-            document.querySelectorAll(".dropdown_menu_list").forEach((menu) => {
-              if (menu !== dropdownMenu) {
-                menu.style.display = "none";
-              }
-            });
-
-            // Toggle current
-            dropdownMenu.style.display =
-              dropdownMenu.style.display === "flex" ? "none" : "flex";
-          });
-        });
-
-        // Close on outside click
-        document.addEventListener("click", function (e) {
-          if (!e.target.closest(".dropdown")) {
-            document.querySelectorAll(".dropdown_menu_list").forEach((menu) => {
-              menu.style.display = "none";
-            });
-          }
-        });
-      });
-    </script>
+    <!-- Bootstrap JS Bundle CDN (with Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
