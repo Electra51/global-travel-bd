@@ -27,6 +27,9 @@ html {
   scrollbar-color: #002d72 #fefaf8;
   /* :#fefaf8 ; */
 }
+.active {
+  color: var(--color-active);
+}
 /* navbar */
 header {
   height: 81px;
@@ -126,12 +129,17 @@ nav {
   flex-direction: column !important;
   gap: 10px !important;
 }
+.dropdown-item.active {
+  background: #00000000 !important;
+  color: var(--color-active) !important;
+}
+.dropdown-item:hover {
+  background: #00000000 !important;
+}
 .dropdown-item {
   padding: 0 !important;
 }
-
-/* navbar style end */
-
+/* hero */
 .hero {
   background-image: url(./../images/home-page-images/hero-area.png);
   max-width: 1170px;
@@ -607,7 +615,6 @@ footer {
   letter-spacing: 0%;
   text-wrap: nowrap;
 }
-
 .social-links {
   position: relative;
   z-index: 999;

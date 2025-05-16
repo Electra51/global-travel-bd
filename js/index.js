@@ -1,5 +1,4 @@
 //mobile menu on off
-
 function toggleMobileMenu() {
   const menu = document.getElementById("mobileMenu");
   menu.classList.toggle("open");
@@ -13,53 +12,6 @@ document
       behavior: "smooth",
     });
   });
-
-// Wait for the DOM to be fully loaded
-// document.addEventListener("DOMContentLoaded", function () {
-//   const dropdown = document.querySelector(".dropdown");
-//   const toggleButton = dropdown.querySelector(".dropdown-a");
-//   const menu = dropdown.querySelector(".dropdown_menu_list");
-
-//   toggleButton.addEventListener("click", function (e) {
-//     e.preventDefault(); // Prevent default anchor behavior
-//     menu.style.display = menu.style.display === "block" ? "none" : "block";
-//   });
-
-//   // Optional: Hide dropdown if clicked outside
-//   document.addEventListener("click", function (e) {
-//     if (!dropdown.contains(e.target)) {
-//       menu.style.display = "none";
-//     }
-//   });
-// });
-
-// document.querySelectorAll(".country-list li").forEach((item) => {
-//   item.addEventListener("click", () => {
-//     const details = item.querySelector(".visa-details");
-//     const isVisible = details.style.display === "block";
-
-//     // Hide all first
-//     document.querySelectorAll(".visa-details").forEach((div) => {
-//       div.style.display = "none";
-//     });
-
-//     // Show if it was hidden
-//     if (!isVisible) {
-//       details.style.display = "block";
-//     }
-//   });
-// });
-
-// const collapseEl = document.getElementById("collapseContent");
-// const arrowIcon = document.getElementById("arrow");
-
-// collapseEl.addEventListener("show.bs.collapse", () => {
-//   arrowIcon.classList.add("rotate");
-// });
-
-// collapseEl.addEventListener("hide.bs.collapse", () => {
-//   arrowIcon.classList.remove("rotate");
-// });
 
 const countries = [
   {
