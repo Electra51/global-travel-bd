@@ -34,7 +34,7 @@ html {
 header {
   height: 81px;
   margin-top: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 30px !important;
 }
 .logo img {
   width: 94px;
@@ -61,6 +61,7 @@ nav {
   justify-content: end;
   align-items: center;
   gap: 76px;
+  margin-bottom: 0 !important;
 }
 .nav_item-ul-li-a {
   text-decoration: none;
@@ -384,7 +385,7 @@ footer {
     height: 101px;
     margin-top: 0;
     background: var(--color-headerMobile);
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
   }
   nav {
     max-width: 480px;

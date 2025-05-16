@@ -190,9 +190,7 @@ countries.forEach((country, index) => {
                 </span>
           </p>
         </h2>
-        <div id="${collapseId}" class="accordion-collapse collapse ${
-    index === 0 ? "show" : ""
-  }" aria-labelledby="${headingId}" data-bs-parent="#accordionExample">
+        <div id="${collapseId}" class="accordion-collapse collapse" aria-labelledby="${headingId}" data-bs-parent="#accordionExample">
           <div class="accordion-body">
             <p class="collaspe-headline">${country.name} Visa Checklist</p>
             <ul
@@ -205,4 +203,18 @@ countries.forEach((country, index) => {
     `;
 
   accordion.innerHTML += item;
+});
+
+document.querySelectorAll(".accordion-item").forEach((item) => {
+  const button = item.querySelector(".country-list-li");
+  const collapseElement = item.querySelector(".accordion-collapse");
+  const arrowIcon = item.querySelector(".arrow-icon");
+
+  collapseElement.addEventListener("show.bs.collapse", () => {
+    arrowIcon.classList.add("rotate-icon");
+  });
+
+  collapseElement.addEventListener("hide.bs.collapse", () => {
+    arrowIcon.classList.remove("rotate-icon");
+  });
 });

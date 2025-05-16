@@ -7,9 +7,15 @@
 p {
   margin-bottom: 0 !important;
 }
-.arrow-icon {
+.rotate-icon {
+  transform: rotate(90deg);
   transition: transform 0.3s ease;
 }
+.arrow-icon {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
 .rotate {
   transform: rotate(90deg); /* rotate right to down */
 }
@@ -34,7 +40,7 @@ html {
 header {
   height: 81px;
   margin-top: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 30px !important;
 }
 .logo img {
   width: 94px;
@@ -61,6 +67,7 @@ nav {
   justify-content: end;
   align-items: center;
   gap: 76px;
+  margin-bottom: 0px !important;
 }
 .nav_item-ul-li-a {
   text-decoration: none;
@@ -252,7 +259,7 @@ nav {
   font-size: 32px;
   font-weight: 300;
   color: var(--color-primary);
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 .stat_p {
   color: var(--color-spanText);
@@ -291,7 +298,7 @@ nav {
   width: 530px;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 20px !important;
 }
 .tour_visa_card_img {
   width: 530px;
@@ -305,7 +312,7 @@ nav {
 }
 .tour_visa_card_content {
   margin-top: 12px;
-  margin-bottom: 16px;
+  margin-bottom: 16px !important;
 }
 .tour_visa_card_title {
   font-family: "Lato", sans-serif;
@@ -314,7 +321,7 @@ nav {
   line-height: 100%;
   letter-spacing: 0%;
   color: var(--color-primary);
-  margin-bottom: 10px;
+  margin-bottom: 10px !important;
 }
 .tour_visa_card_description {
   font-weight: 400;
@@ -322,7 +329,7 @@ nav {
   line-height: 130%;
   letter-spacing: 0%;
   color: var(--color-secondary);
-  margin-bottom: 0px;
+  margin-bottom: 0px !important;
 }
 .tour_visa_card_description span {
   font-weight: 600;
@@ -337,7 +344,7 @@ nav {
   box-shadow: 0px 4px 12px 0px #0d0a2c0f;
   background: #fff;
   border-radius: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 20px !important;
   height: 60px;
 }
 .tour_visa_search_box input::placeholder {
@@ -387,6 +394,7 @@ input:focus {
   row-gap: 22px;
 }
 .country-list-li {
+  border-radius: 7px;
   height: 64px;
   display: flex;
   justify-content: space-between;
@@ -435,6 +443,8 @@ input:focus {
 }
 .accordion-body {
   padding: 0 !important;
+  background: white !important;
+  backdrop-filter: url() !important;
 }
 
 /* other service section */
@@ -674,7 +684,7 @@ footer {
     height: 101px;
     margin-top: 0;
     background: var(--color-headerMobile);
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
   }
   nav {
     max-width: 480px;
@@ -842,7 +852,7 @@ footer {
   .stat_number p {
     font-size: 16px;
     font-weight: 500;
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
   }
   .stat_number svg {
     height: 16px;
@@ -898,7 +908,7 @@ footer {
 
   .tour_visa_header {
     font-size: 26px;
-    margin-bottom: 24px;
+    margin-bottom: 24px !important;
     text-align: center;
   }
   .tour_visa_card {
@@ -906,7 +916,7 @@ footer {
     width: 343px;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
-    margin-bottom: 16px;
+    margin-bottom: 16px !important;
     background: #fefefe;
   }
   .tour_visa_card_img {
@@ -922,7 +932,7 @@ footer {
   }
   .tour_visa_card_content {
     margin-top: 12px;
-    margin-bottom: 0px;
+    margin-bottom: 0px !important;
   }
   .tour_visa_card_title {
     font-size: 20px;
@@ -940,7 +950,7 @@ footer {
     box-shadow: 0px 4px 12px 0px #0d0a2c0f;
     background: #fff;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 20px !important;
     height: 48px;
   }
   .tour_visa_search_box input::placeholder {
