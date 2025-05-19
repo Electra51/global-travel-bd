@@ -34,7 +34,7 @@ html {
   /* :#fefaf8 ; */
 }
 .active {
-  color: var(--color-active);
+  color: var(--color-active) !important;
 }
 /* navbar */
 header {
@@ -79,7 +79,7 @@ nav {
   line-height: 140%;
 }
 .nav_item-ul li.active a {
-  color: var(--color-active);
+  color: var(--color-active) !important;
 }
 .nav-btn {
   display: inline;
@@ -275,6 +275,7 @@ nav {
   margin: 0 auto;
   display: flex;
   gap: 55px;
+  height: 911px;
 }
 .tour_visa_bar {
   border-right: 1px dashed #bbbbbb;
@@ -386,12 +387,15 @@ input:focus {
   right: 0;
 }
 .country-list {
+  /* border: 1px solid red; */
   list-style: none;
   padding-left: 0;
   margin-top: 40px;
   display: flex;
   flex-direction: column;
   row-gap: 22px;
+  height: 711px;
+  overflow-y: hidden;
 }
 .country-list-li {
   border-radius: 7px;

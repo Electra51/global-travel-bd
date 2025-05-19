@@ -141,7 +141,7 @@ nav {
   padding: 0 !important;
 }
 
-/* advisor us hero section */
+/* requirement us hero section */
 
 /* pattern */
 .left_background {
@@ -162,65 +162,111 @@ nav {
   left: 0;
   z-index: -1;
 }
+.left_bottom_background2 {
+  position: absolute;
+  bottom: -1015px;
+  left: 0;
+  z-index: -1;
+}
 .right_bottom_background {
   position: absolute;
   bottom: -372px;
   right: 0;
   z-index: -1;
 }
+.right_bottom_background2 {
+  position: absolute;
+  bottom: -842px;
+  right: 0;
+  z-index: -1;
+}
 
 /* pattern end */
-/* advisor content */
-.advisor_contant {
+/* requirement content */
+.requirement_contant {
   max-width: 1170px;
   margin: 50px auto 0 auto;
-  display: flex;
-  justify-content: baseline;
-  align-items: start;
-  gap: 30px;
 }
-.advisor_right_part {
-  width: 570px;
-}
-.advisor_img {
-  width: 570px;
-  height: 609px;
-  border-radius: 16px;
-}
-.advisor_img img {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
+
+.requirement-hero-btn {
+  margin-top: 30px;
 }
 .page_head_text {
   font-weight: 600;
-  font-size: 50px;
-  line-height: 160%;
+  font-size: 48px;
+  line-height: 120%;
   letter-spacing: 0%;
+  text-align: center;
   color: var(--color-primary);
 }
-.advisor-designation {
+.requirement_hero {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.requirement_hero_details {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 60px;
+  gap: 30px;
+}
+
+.requirement_hero_details_left {
+  width: 470px;
+  height: 502px;
+  border-radius: 16px;
+}
+.requirement_hero_details_left img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.requirement_hero_details_right {
+  width: 670px;
+}
+.requirement_hero_details_right_title {
   font-weight: 600;
   font-size: 24px;
   line-height: 160%;
   letter-spacing: 0%;
   color: var(--color-primary);
 }
-.advisor-advice {
+.requirement_hero_details_right_para {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0%;
+  color: var(--color-secondary);
   margin-top: 30px;
 }
-.advisor-advice-p {
-  font-weight: 400;
-  line-height: 160%;
-  font-size: 16px;
-  color: var(--color-secondary);
-}
-.advisor-advice-p span {
+.requirement_hero_details_right_para span {
   font-weight: 400;
   font-size: 60px;
   letter-spacing: 0%;
 }
-
+.requirement_main_content {
+  margin-top: 150px;
+}
+.why_choose {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 160%;
+  letter-spacing: 0%;
+  color: var(--color-primary);
+}
+.why_choose_content {
+  margin-top: 30px;
+}
+.why_choose_content li {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 160%;
+  letter-spacing: 0%;
+  color: var(--color-secondary);
+  margin-top: 12px;
+}
 /* footer section */
 footer {
   margin-top: 150px;
@@ -391,6 +437,7 @@ footer {
     left: -100%;
     width: 100%;
     height: 100vh;
+    /* background-image: url(../images/home-page-images/hero-area-mobile.png); */
     background-color: var(--color-mobileMenubg);
     box-shadow: 4px 0 12px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -459,36 +506,66 @@ footer {
   .left_bottom_background {
     height: 100px;
   }
+  .left_bottom_background2 {
+    height: 100px;
+  }
   .right_bottom_background {
     height: 100px;
   }
+  .right_bottom_background2 {
+    height: 100px;
+  }
 
-  /* advisor content */
-  .advisor_contant {
+  /* requirement content */
+  .requirement_content {
     max-width: 343px;
     margin: 30px auto 0 auto;
+  }
+  .requirement-hero-btn {
+    margin-top: 20px;
+  }
+  .requirement_hero_details2 {
+    display: none;
+  }
+  .requirement_hero_details_mobile {
     display: flex;
     flex-direction: column;
-    justify-content: baseline;
-    align-items: start;
-    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
   }
   .page_head_text {
-    font-size: 28px;
-    line-height: 160%;
+    font-size: 30px;
   }
-  .advisor-designation {
-    font-size: 18px;
-    line-height: 160%;
+  .requirement_hero {
+    gap: 40px;
   }
-  .advisor_right_part {
-    width: 343px;
+  .requirement_hero_details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 20px;
   }
-  .advisor_img {
+
+  .requirement_hero_details_left {
     width: 343px;
     height: 352px;
     border-radius: 16px;
-    margin-top: 30px;
+  }
+  .requirement_hero_details_right_title {
+    font-size: 26px;
+  }
+  .requirement_hero_details_right {
+    width: 343px;
+  }
+  .requirement_hero_details_right_para {
+    font-size: 14px;
+  }
+  .requirement_hero_details_right_para span {
+    font-weight: 400;
+    font-size: 30px;
   }
 
   /* footer section */

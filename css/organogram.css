@@ -273,6 +273,15 @@ nav {
   font-size: 16px;
   letter-spacing: 0%;
 }
+.email {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0%;
+}
+.email:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 .organogram_hero_details_mobile {
   display: none;
 }

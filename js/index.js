@@ -16,6 +16,7 @@ document
 const countries = [
   {
     name: "Canada",
+    seeMore: "./canada.html",
     checklist: [
       "All Passport + Recent Passport with minimum 1 year validity",
       "Photo 35/45 size 2 copy",
@@ -33,6 +34,7 @@ const countries = [
   },
   {
     name: "Brazil",
+    seeMore: "./brazil.html",
     checklist: [
       "All Passport + Recent Passport with minimum 1 year validity",
       "Photo 35/45 size 2 copy",
@@ -50,6 +52,7 @@ const countries = [
   },
   {
     name: "Japan",
+    seeMore: "./japan.html",
     checklist: [
       "All Passport + Recent Passport with minimum 1 year validity",
       "Photo 35/45 size 2 copy",
@@ -67,6 +70,7 @@ const countries = [
   },
   {
     name: "Germany",
+    seeMore: "./germany.html",
     checklist: [
       "All Passport + Recent Passport with minimum 1 year validity",
       "Photo 35/45 size 2 copy",
@@ -84,6 +88,7 @@ const countries = [
   },
   {
     name: "Australia",
+    seeMore: "./australia.html",
     checklist: [
       "All Passport + Recent Passport with minimum 1 year validity",
       "Photo 35/45 size 2 copy",
@@ -101,6 +106,7 @@ const countries = [
   },
   {
     name: "France",
+    seeMore: "./france.html",
     checklist: [
       "All Passport + Recent Passport with minimum 1 year validity",
       "Photo 35/45 size 2 copy",
@@ -118,6 +124,7 @@ const countries = [
   },
   {
     name: "Mexico",
+    seeMore: "./maxico.html",
     checklist: [
       "All Passport + Recent Passport with minimum 1 year validity",
       "Photo 35/45 size 2 copy",
@@ -135,6 +142,7 @@ const countries = [
   },
   {
     name: "South Korea",
+    seeMore: "./south-korea.html",
     checklist: [
       "All Passport + Recent Passport with minimum 1 year validity",
       "Photo 35/45 size 2 copy",
@@ -161,7 +169,7 @@ countries.forEach((country, index) => {
     .map((item, i, arr) => {
       if (i === arr.length - 1 && item.includes("See More")) {
         const [before, after] = item.split("See More");
-        return `<li>${before}<span style="color: #ea6724; cursor: pointer;">See More</span></li>`;
+        return `<li>${before}<a href="${country.seeMore}" style="color: #ea6724; cursor: pointer;">See More</a></li>`;
       }
       return `<li>${item}</li>`;
     })
