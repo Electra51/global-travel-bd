@@ -30,8 +30,20 @@ p {
 }
 html {
   scroll-behavior: smooth;
-  scrollbar-color: #002d72 #fefaf8;
+  /* scrollbar-color: #002d72 #fefaf8; */
+
   /* :#fefaf8 ; */
+}
+::-webkit-scrollbar {
+  width: 1px; /* Chrome, Safari, Edge */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #002e7200;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fefaf8;
 }
 .active {
   color: var(--color-active) !important;
@@ -395,7 +407,7 @@ input:focus {
   flex-direction: column;
   row-gap: 22px;
   height: 711px;
-  overflow-y: hidden;
+  overflow-y: auto;
 }
 .country-list-li {
   border-radius: 7px;
@@ -449,6 +461,9 @@ input:focus {
   padding: 0 !important;
   background: white !important;
   backdrop-filter: url() !important;
+  /* height: 331px;
+  overflow: auto;
+  padding-bottom: 30px !important; */
 }
 
 /* other service section */
