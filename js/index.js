@@ -169,7 +169,7 @@ countries.forEach((country, index) => {
     .map((item, i, arr) => {
       if (i === arr.length - 1 && item.includes("See More")) {
         const [before, after] = item.split("See More");
-        return `<li>${before}<a href="${country.seeMore}" style="color: #ea6724; cursor: pointer;">See More</a></li>`;
+        return `<li>${before}<a href="${country.seeMore}" class="accordian-seeMore">See More</a></li>`;
       }
       return `<li>${item}</li>`;
     })
