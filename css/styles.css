@@ -295,7 +295,7 @@ nav {
   margin: 0 auto;
   display: flex;
   gap: 55px;
-  height: 911px;
+  height: 893px;
 }
 .tour_visa_bar {
   border-right: 1px dashed #bbbbbb;
@@ -404,14 +404,13 @@ input:focus {
   right: 0;
 }
 .country-list {
-  /* border: 1px solid red; */
   list-style: none;
   padding-left: 0;
   margin-top: 40px;
   display: flex;
   flex-direction: column;
   row-gap: 22px;
-  height: 711px;
+  height: 688px;
   overflow-y: auto;
 }
 .country-list-li {
@@ -501,33 +500,43 @@ input:focus {
 .other_service_details {
   margin-top: 40px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
 .other_service_card {
-  width: 570px;
-  height: 214px;
+  width: 270px;
+  height: 228px;
   border-radius: 20px;
   border-width: 0.5px;
   border: 0.5px solid var(--color-active);
-  padding: 37px 28px;
-  background: var(--color-headerMobile);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-mobileMenubg);
 }
 .other_service_card_head_text {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 16px;
   line-height: 160%;
   letter-spacing: 0%;
+  text-align: center;
+  width: 217px;
+  margin: 0 auto;
   color: var(--color-primary);
 }
-.other_service_card_text {
-  font-weight: 500;
+.other_service_card_seeAll {
+  font-weight: 600;
   font-size: 16px;
-  line-height: 180%;
+  line-height: 160%;
   letter-spacing: 0%;
-  color: var(--color-secondary);
-  margin-top: 22px;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 0%;
+  color: var(--color-active);
 }
+
 /* about section */
 .about_section {
   background: #edfbff;
@@ -1068,10 +1077,6 @@ footer {
   }
   .other_service_card_head_text {
     font-size: 20px;
-  }
-  .other_service_card_text {
-    font-size: 13px;
-    margin-top: 10px;
   }
 
   /* about section */
