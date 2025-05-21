@@ -348,13 +348,15 @@ nav {
   color: var(--color-secondary);
   margin-bottom: 16px !important;
   margin-top: 10px;
+  text-decoration: none;
 }
-.tour_visa_card_description span {
+.tour_visa_card_description a {
   font-weight: 600;
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 0%;
   color: var(--color-active);
+  text-decoration: none;
 }
 .tour_visa_search_box {
   display: flex;
@@ -594,17 +596,45 @@ input:focus {
   background-image: url(../images/home-page-images/ready_to_travel.png);
   background-repeat: no-repeat;
   height: 396px;
-  object-fit: cover;
-  width: 1000%;
-
-  margin: 0;
-  padding: 0;
-  /* background-image: url('ready_to_travel.png'); যদি একই ফোল্ডারে থাকে */
-  background-size: cover; /* পুরো স্ক্রিন জুড়ে থাকবে */
   background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed; /* চাইলে স্ক্রল করলে ব্যাকগ্রাউন্ড ফিক্স থাকবে */
-  font-family: sans-serif;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.ready_container {
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-top: 150px !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+.head_text {
+  font-weight: 400;
+  font-size: 61.75px;
+  line-height: 120%;
+  letter-spacing: -1%;
+  color: var(--color-primary);
+}
+.head_p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 160%;
+  letter-spacing: -1%;
+  color: var(--color-secondary);
+  margin-top: 40px;
+}
+.head_contact_call {
+  margin-top: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: -1%;
+  color: var(--color-primary);
+}
+.head_contact_call span {
+  font-weight: 600;
 }
 
 /* about section */
@@ -1056,8 +1086,9 @@ footer {
     font-size: 14px;
     margin-top: 10px;
   }
-  .tour_visa_card_description span {
+  .tour_visa_card_description a {
     font-size: 15px;
+    text-decoration: auto !important;
   }
   .tour_visa_search_box {
     display: flex;
@@ -1163,7 +1194,46 @@ footer {
     font-size: 12px;
     width: 129px;
   }
+  /* why choose section */
+  .why_choose_section {
+    max-width: 343px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
 
+    height: 710px;
+    background: rgb(237, 251, 255);
+    /* padding: 16px; */
+    height: 710px;
+    margin-top: 50px !important;
+  }
+  .why_choose {
+    max-width: 343px;
+    padding-left: 16px;
+    padding-top: 16px;
+    margin-top: 0px !important;
+  }
+  .why_choose_header {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 16px !important;
+    text-wrap: wrap;
+  }
+  .why_choose_point {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 160%;
+    letter-spacing: 0%;
+    color: var(--color-secondary);
+  }
+  .why_choose_description {
+    gap: 12px;
+  }
+  .ready_to_travel {
+    display: none;
+  }
   /* about section */
   .about_container {
     margin-top: 50px !important;

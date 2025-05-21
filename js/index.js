@@ -16,7 +16,7 @@ document
 const countries = [
   {
     name: "Canada",
-    seeMore: "./canada.html",
+    seeMore: "canada-visa",
     checklist: [
       "All Passport + Recent Passport with minimum 1 year validity",
       "Photo 35/45 size 2 copy",
@@ -34,7 +34,7 @@ const countries = [
   },
   {
     name: "Brazil",
-    seeMore: "./brazil.html",
+    seeMore: "brazil-visa",
     checklist: [
       "All Passport + Recent Passport with minimum 1 year validity",
       "Photo 35/45 size 2 copy",
@@ -52,7 +52,7 @@ const countries = [
   },
   {
     name: "Japan",
-    seeMore: "./japan.html",
+    seeMore: "japan-visa",
     checklist: [
       "All Passport + Recent Passport with minimum 1 year validity",
       "Photo 35/45 size 2 copy",
@@ -70,7 +70,7 @@ const countries = [
   },
   {
     name: "Germany",
-    seeMore: "./germany.html",
+    seeMore: "germany-visa",
     checklist: [
       "All Passport + Recent Passport with minimum 1 year validity",
       "Photo 35/45 size 2 copy",
@@ -88,7 +88,7 @@ const countries = [
   },
   {
     name: "Australia",
-    seeMore: "./australia.html",
+    seeMore: "australia-visa",
     checklist: [
       "All Passport + Recent Passport with minimum 1 year validity",
       "Photo 35/45 size 2 copy",
@@ -106,7 +106,7 @@ const countries = [
   },
   {
     name: "France",
-    seeMore: "./france.html",
+    seeMore: "france-visa",
     checklist: [
       "All Passport + Recent Passport with minimum 1 year validity",
       "Photo 35/45 size 2 copy",
@@ -124,7 +124,7 @@ const countries = [
   },
   {
     name: "Mexico",
-    seeMore: "./maxico.html",
+    seeMore: "mexico-visa",
     checklist: [
       "All Passport + Recent Passport with minimum 1 year validity",
       "Photo 35/45 size 2 copy",
@@ -142,7 +142,25 @@ const countries = [
   },
   {
     name: "South Korea",
-    seeMore: "./south-korea.html",
+    seeMore: "south-korea-visa",
+    checklist: [
+      "All Passport + Recent Passport with minimum 1 year validity",
+      "Photo 35/45 size 2 copy",
+      "Visiting card",
+      "License if business with Notary",
+      "Company official pad",
+      "Job ID+NOC salary certificate + pay slip if job holder,salary statement",
+      "Bank statement 6 Months (Minimum balance 2,50,000 per person)",
+      "Bank solvency Certificate",
+      "For students school, College, University ID card,NOC",
+      "Marriage Certificate (English Notary)",
+      "NID Card + Birth Certificate",
+      "Processing time: Depends on Embassy rules. See More",
+    ],
+  },
+  {
+    name: "USA",
+    seeMore: "usa-visa",
     checklist: [
       "All Passport + Recent Passport with minimum 1 year validity",
       "Photo 35/45 size 2 copy",
@@ -169,7 +187,7 @@ countries.forEach((country, index) => {
     .map((item, i, arr) => {
       if (i === arr.length - 1 && item.includes("See More")) {
         const [before, after] = item.split("See More");
-        return `<li>${before}<a href="${country.seeMore}" class="accordian-seeMore">See More</a></li>`;
+        return `<li>${before}<a href="visa-requirements.html#${country.seeMore}" class="accordian-seeMore">See More</a></li>`;
       }
       return `<li>${item}</li>`;
     })
