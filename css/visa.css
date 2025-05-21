@@ -184,10 +184,12 @@ nav {
 /* pattern end */
 /* requirement content */
 .requirement_contant {
-  max-width: 1170px;
   margin: 50px auto 0 auto;
 }
-
+.contry_section {
+  max-width: 1170px;
+  margin: 0 auto;
+}
 .requirement-hero-btn {
   margin-top: 30px;
 }
@@ -213,6 +215,13 @@ nav {
   gap: 30px;
 }
 
+.requirement_hero_details_right_headText {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: var(--color-primary);
+}
 .requirement_hero_details_left {
   width: 470px;
   height: 502px;
@@ -247,6 +256,11 @@ nav {
   letter-spacing: 0%;
 }
 .requirement_main_content {
+  margin-top: 80px;
+}
+.requirement_bar {
+  width: 100%;
+  border: 0.5px dashed #bbbbbb;
   margin-top: 150px;
 }
 .why_choose {
@@ -260,7 +274,7 @@ nav {
   margin-top: 30px;
 }
 .why_choose_content li {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 24px;
   line-height: 160%;
   letter-spacing: 0%;
@@ -554,6 +568,7 @@ footer {
     height: 352px;
     border-radius: 16px;
   }
+
   .requirement_hero_details_right_title {
     font-size: 26px;
   }

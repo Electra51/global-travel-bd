@@ -459,6 +459,7 @@ input:focus {
 }
 .accordion-item {
   border: none !important;
+  background: transparent !important;
 }
 .accordian-seeMore {
   color: #ea6724;
@@ -535,6 +536,75 @@ input:focus {
   text-decoration-style: solid;
   text-decoration-thickness: 0%;
   color: var(--color-active);
+}
+
+/* why choose section */
+.why_choose_section {
+  margin-top: 150px !important;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  /* gap: 55px; */
+  background: #edfbff;
+  height: 457px;
+}
+.why_choose_bar {
+  border-right: 1px dashed #bbbbbb;
+}
+.why_choose,
+.country_cover {
+  flex: 1;
+  max-width: 530px;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+.why_choose_header {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 160%;
+  color: var(--color-primary);
+  margin-bottom: 24px !important;
+  text-wrap: nowrap;
+}
+.why_choose_description {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: start;
+  align-items: start;
+}
+.why_choose_point {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0%;
+  color: var(--color-secondary);
+}
+.why_choose_bottom_text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0%;
+  color: var(--color-primary);
+  margin-top: 24px;
+}
+
+/* ready to travel section */
+.ready_to_travel {
+  background-image: url(../images/home-page-images/ready_to_travel.png);
+  background-repeat: no-repeat;
+  height: 396px;
+  object-fit: cover;
+  width: 1000%;
+
+  margin: 0;
+  padding: 0;
+  /* background-image: url('ready_to_travel.png'); যদি একই ফোল্ডারে থাকে */
+  background-size: cover; /* পুরো স্ক্রিন জুড়ে থাকবে */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* চাইলে স্ক্রল করলে ব্যাকগ্রাউন্ড ফিক্স থাকবে */
+  font-family: sans-serif;
 }
 
 /* about section */
@@ -914,7 +984,9 @@ footer {
     margin: 50px auto 0 auto !important;
     display: flex;
     flex-direction: column;
-    gap: 55px;
+    gap: 40px;
+    height: 1661px;
+    border: 1px solid red;
   }
   .tour_visa_bar {
     border-right: 1px dashed #bbbbbb;
@@ -1033,6 +1105,8 @@ footer {
     position: absolute;
     top: 1300px;
     right: 0;
+    z-index: -1;
+    height: 100px;
   }
   .country-list {
     list-style: none;
@@ -1048,7 +1122,7 @@ footer {
 
   /* other service section */
   .other_service {
-    margin-top: 50px !important;
+    margin-top: 60px !important;
     max-width: 343px;
     margin: 0 auto;
   }
@@ -1061,22 +1135,33 @@ footer {
     right: 0;
     z-index: -1;
   }
+  .other_service_card {
+    gap: 18px;
+  }
+  .other_service_card_seeAll {
+    font-size: 12px;
+  }
   .other_service_details {
     margin-top: 24px;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 23px;
+  }
+  .other_service_img {
+    width: 52px;
+    height: 55px;
   }
   .other_service_card {
-    width: 343px;
-    height: 172px;
-    border-radius: 8px;
+    width: 160px;
+    height: 135px;
+    border-radius: 11.85px;
     border: 1px solid var(--color-active);
     padding: 16px 16px;
     background: var(--color-headerMobile);
   }
   .other_service_card_head_text {
-    font-size: 20px;
+    font-size: 12px;
+    width: 129px;
   }
 
   /* about section */
