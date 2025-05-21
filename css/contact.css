@@ -635,6 +635,7 @@ footer {
   .contact_hero_details_para {
     font-size: 15px;
     margin-top: 0px;
+    padding: 0 9px;
   }
   .form-inputs {
     display: flex;

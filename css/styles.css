@@ -57,7 +57,6 @@ header {
 }
 nav {
   max-width: 1170px;
-  height: 55px;
   margin: 0px auto;
   display: flex;
   justify-content: space-between;
@@ -177,6 +176,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: normal;
+  gap: 66px;
 }
 .left_background {
   position: absolute;
@@ -192,13 +192,13 @@ nav {
 }
 .left_bottom_background {
   position: absolute;
-  bottom: -75px;
+  bottom: -275px;
   left: 0;
   z-index: -1;
 }
 .right_bottom_background {
   position: absolute;
-  bottom: -146px;
+  bottom: -330px;
   right: 0;
   z-index: -1;
 }
@@ -209,12 +209,13 @@ nav {
 .hero_head_text {
   font-size: 60px;
   font-weight: 600;
-  line-height: 115%;
+  line-height: 120%;
   color: var(--color-primary);
 }
-.hero_head_text span {
-  font-size: 50px;
+.hero_head_text2 {
+  font-size: 60px;
   font-weight: 600;
+  line-height: 120%;
   color: var(--color-spanText);
 }
 .hero_details {
@@ -228,6 +229,12 @@ nav {
 .hero_right {
   width: 434px;
   height: 524px;
+  border-radius: 16px;
+}
+.hero_right {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
   border-radius: 16px;
 }
 .book_btn {
@@ -261,7 +268,7 @@ nav {
 .stats {
   display: flex;
   justify-content: space-around;
-  margin-top: 100px;
+  margin-top: 83px;
   gap: 24px;
 }
 .stat {
@@ -307,7 +314,7 @@ nav {
 }
 .tour_visa_header {
   font-family: "Lato", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 50px;
   line-height: 100%;
   color: var(--color-primary);
@@ -323,12 +330,13 @@ nav {
 .tour_visa_card_img {
   width: 530px;
   height: 142px;
-  border-radius: 12px;
+  border-radius: 10px;
 }
 .tour_visa_card_img img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: 10px;
 }
 .tour_visa_card_title {
   font-family: "Lato", sans-serif;
@@ -364,7 +372,7 @@ nav {
   box-shadow: 0px 4px 12px 0px #0d0a2c0f;
   background: #fff;
   border-radius: 10px;
-  margin-bottom: 20px !important;
+  margin-bottom: 40px !important;
   height: 60px;
 }
 .tour_visa_search_box input::placeholder {
@@ -488,7 +496,7 @@ input:focus {
 }
 .other_service_head_text {
   font-weight: 600;
-  font-size: 48px;
+  font-size: 50px;
   line-height: 120%;
   letter-spacing: 0%;
   text-align: center;
@@ -496,7 +504,7 @@ input:focus {
 }
 .other_service_right_background {
   position: absolute;
-  top: 2131px;
+  top: 2074px;
   right: 0;
   z-index: -1;
 }
@@ -556,12 +564,12 @@ input:focus {
 .why_choose,
 .country_cover {
   flex: 1;
-  max-width: 530px;
+  /* max-width: 530px; */
   padding-left: 30px;
   padding-top: 30px;
 }
 .why_choose_header {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 24px;
   line-height: 160%;
   color: var(--color-primary);
@@ -694,6 +702,10 @@ input:focus {
   right: 0;
   z-index: -1;
 }
+.for-mobile-readMore {
+  display: none;
+  /* color: var(--color-active); */
+}
 
 /* footer section */
 footer {
@@ -750,7 +762,7 @@ footer {
   list-style: none;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, max-content);
   column-gap: 63px;
   row-gap: 30px;
   margin-top: 30px;
@@ -935,6 +947,12 @@ footer {
   .right_background {
     display: none;
   }
+  .right_bottom_background {
+    height: 100px;
+  }
+  .other_service_right_background {
+    height: 100px;
+  }
   .hero_right {
     display: none;
   }
@@ -943,8 +961,9 @@ footer {
     margin-top: 20px;
     max-width: 343px;
     height: 389px;
-    padding: 16px;
+    padding: 18px 32px;
     border-radius: 5px;
+    justify-content: center;
   }
   .hero_left {
     display: flex;
@@ -954,19 +973,20 @@ footer {
     height: 325px;
   }
   .hero_head_text {
-    margin-top: 18px;
+    font-weight: 600;
+    /* margin-top: 18px; */
     font-size: 40px;
     text-align: center;
   }
-  .hero_head_text span {
+  .hero_head_text2 {
     font-size: 29px;
+    text-align: center;
   }
   .hero_details {
     font-size: 14px;
-    margin-top: 0px !important;
+    margin-top: 12px !important;
     width: 292px;
     text-align: center;
-    font-size: 15px;
     font-weight: 400;
     line-height: 160%;
     color: var(--color-secondary);
@@ -1016,7 +1036,6 @@ footer {
     flex-direction: column;
     gap: 40px;
     height: 1661px;
-    border: 1px solid red;
   }
   .tour_visa_bar {
     border-right: 1px dashed #bbbbbb;
@@ -1153,7 +1172,7 @@ footer {
 
   /* other service section */
   .other_service {
-    margin-top: 60px !important;
+    margin-top: 70px !important;
     max-width: 343px;
     margin: 0 auto;
   }
@@ -1262,6 +1281,21 @@ footer {
   .about_right {
     width: 344px;
   }
+
+  .for-mobile-readMore {
+    display: inline-block;
+    color: var(--color-active) !important;
+    font-weight: 600 !important;
+  }
+  .for-mobile-readMore:hover {
+    text-decoration: underline;
+  }
+  .about_right_text {
+    font-weight: 400;
+  }
+  .about_right_text span {
+    font-weight: 400;
+  }
   .about_left_background {
     display: none;
   }
@@ -1275,7 +1309,7 @@ footer {
     background-color: var(--color-mobileMenubg);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    height: 499px;
+    height: 548px !important;
     position: relative;
   }
   .bg-footer-pattern {
@@ -1376,6 +1410,7 @@ footer {
     width: 30px;
   }
   .footer-bottom {
+    margin-top: 30px;
     border-top: 1px solid var(--color-active);
   }
   .footer-bottom-container {
