@@ -377,7 +377,7 @@ footer {
   list-style: none;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, max-content);
   column-gap: 63px;
   row-gap: 30px;
   margin-top: 30px;
