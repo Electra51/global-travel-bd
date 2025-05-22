@@ -15,7 +15,6 @@ p {
   display: inline-block;
   transition: transform 0.3s ease;
 }
-
 .rotate {
   transform: rotate(90deg);
 }
@@ -35,11 +34,9 @@ html {
 ::-webkit-scrollbar {
   width: 3px;
 }
-
 ::-webkit-scrollbar-thumb {
   background-color: #002e7200;
 }
-
 ::-webkit-scrollbar-track {
   background-color: var(--color-mobileMenubg);
 }
@@ -310,7 +307,6 @@ nav {
 .tour_details {
   height: 811px;
   overflow: auto;
-  /* padding: 5px 0; */
 }
 .tour-packages,
 .visa-requirements {
@@ -485,11 +481,7 @@ input:focus {
 }
 .accordion-body {
   padding: 0 !important;
-  /* background: white !important; */
   backdrop-filter: url() !important;
-  /* height: 331px;
-  overflow: auto;
-  padding-bottom: 30px !important; */
 }
 
 /* other service section */
@@ -497,7 +489,6 @@ input:focus {
   margin-top: 150px !important;
   max-width: 1170px;
   margin: 0 auto;
-  /* position: relative; */
 }
 .other_service_head_text {
   font-family: "Lato", sans-serif;
@@ -562,7 +553,6 @@ input:focus {
   max-width: 1170px;
   margin: 0 auto;
   display: flex;
-  /* gap: 55px; */
   background: #edfbff;
   height: 457px;
 }
@@ -572,7 +562,6 @@ input:focus {
 .why_choose,
 .country_cover {
   flex: 1;
-  /* max-width: 530px; */
   padding-left: 30px;
   padding-top: 30px;
 }
@@ -613,7 +602,7 @@ input:focus {
   background-repeat: no-repeat;
   height: 396px;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: local;
   background-size: cover;
 }
 .ready_container {
@@ -711,7 +700,6 @@ input:focus {
   right: 0;
   z-index: -1;
 }
-
 .about_right_text2 {
   font-weight: 500;
   font-size: 16px;
@@ -895,7 +883,6 @@ footer {
     left: -100%;
     width: 100%;
     height: 100vh;
-    /* background-image: url(../images/home-page-images/hero-area-mobile.png); */
     background-color: var(--color-mobileMenubg);
     box-shadow: 4px 0 12px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -988,7 +975,6 @@ footer {
   }
   .hero_head_text {
     font-weight: 600;
-    /* margin-top: 18px; */
     font-size: 40px;
     text-align: center;
   }
@@ -1055,13 +1041,11 @@ footer {
     border-right: 1px dashed #bbbbbb;
     display: none;
   }
-
   .tour-packages,
   .visa-requirements {
     flex: 1;
     max-width: 343px;
   }
-
   .country-content {
     display: none;
     margin-left: 30px;
@@ -1084,7 +1068,6 @@ footer {
     gap: 10px;
     position: relative;
   }
-
   .tour_visa_header {
     font-size: 26px;
     margin-bottom: 24px !important;
@@ -1228,6 +1211,7 @@ footer {
     font-size: 12px;
     width: 129px;
   }
+
   /* why choose section */
   .why_choose_section {
     max-width: 343px;
@@ -1268,6 +1252,7 @@ footer {
   .ready_to_travel {
     display: none;
   }
+
   /* about section */
   .about_container {
     margin-top: 50px !important;
@@ -1296,7 +1281,6 @@ footer {
   .about_right {
     width: 344px;
   }
-
   .about_right_text {
     font-weight: 400;
   }
@@ -1342,7 +1326,6 @@ footer {
   }
   .footer-left {
     flex: 1;
-    /* min-width: 300px; */
   }
   .footer_logo {
     display: flex;
