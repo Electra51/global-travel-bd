@@ -658,8 +658,7 @@ const tours = [
   {
     country: "Kathmandu Pokhara",
     image: "../images/home-page-images/italy.png",
-    description:
-      "গরু কাটা শেষে প্যাকেজ নিয়ে ঘুরে আসুন হিমালয় কন্যা নেপাল থেকে....",
+    description: "Do Hurry and grab the chance to join the trip....",
     link: "tour-packages.html#Kathmandu-tour",
   },
   {
@@ -672,7 +671,7 @@ const tours = [
     country: "Indonesia",
     image: "../images/home-page-images/italy.png",
     description:
-      "Eid Offer Discover the magic of Indonesia 🍀– where vibrant cultures, breathtaking....",
+      "Eid Offer Discover the magic of Indonesia – where vibrant cultures, breathtaking....",
     link: "tour-packages.html#Indonesia-tour",
   },
   {
