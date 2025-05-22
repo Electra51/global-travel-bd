@@ -26,74 +26,71 @@
         <a href="./" class="logo">
           <img src="./images/home-page-images/logo.svg" alt="Company Logo" />
         </a>
-        <div class="nav_item">
-          <ul class="nav_item-ul">
-            <li>
-              <a class="nav_item-ul-li-a" href="./">Home</a>
-            </li>
-            <li>
-              <a class="nav_item-ul-li-a" href="./services.html">Services</a>
-            </li>
-            <li>
-              <a class="nav_item-ul-li-a active" href="./tour-packages.html"
-                >Tour Packages</a
-              >
-            </li>
-            <li>
-              <a class="nav_item-ul-li-a" href="./visa-requirements.html"
-                >Visa Requirements</a
-              >
-            </li>
-            <li>
-              <div class="dropdown">
-                <a
-                  class="nav_item-ul-li-a"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  About Global
-                  <svg
-                    width="21"
-                    height="21"
-                    viewBox="0 0 21 21"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M5.625 8L10.625 13L15.625 8"
-                      stroke="#505673"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg>
-                </a>
-                <ul class="dropdown-menu">
-                  <li class="">
-                    <a class="dropdown-item" href="./about.html">About Us</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./mission.html"
-                      >Our Mission</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./chief-advisor.html"
-                      >Chief Advisor</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./ceo.html">CEO</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./services.html"
-                      >Official services</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </div>
+        <ul class="nav_item-ul">
+          <li>
+            <a class="nav_item-ul-li-a" href="./">Home</a>
+          </li>
+          <li>
+            <a class="nav_item-ul-li-a" href="./services.html">Services</a>
+          </li>
+          <li class="active">
+            <a class="nav_item-ul-li-a" href="./tour-packages.html"
+              >Tour Packages</a
+            >
+          </li>
+          <li>
+            <a class="nav_item-ul-li-a" href="./visa-requirements.html"
+              >Visa Requirements</a
+            >
+          </li>
+          <li>
+            <div class="dropdown">
+              <a
+                class="nav_item-ul-li-a"
+                class="dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                About Global
+                <svg
+                  width="21"
+                  height="21"
+                  viewBox="0 0 21 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5.625 8L10.625 13L15.625 8"
+                    stroke="#002d72"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./about.html">About Us</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./mission.html">Our Mission</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./ceo.html">CEO</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./chief-advisor.html"
+                    >Chief Advisor</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./organogram.html"
+                    >Official Organogram</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
         <a href="./contact.html" style="text-decoration: none" class="nav-btn">
           <button class="contact_btn">Contact Us</button>
         </a>
@@ -265,7 +262,7 @@
         class="bg-footer-pattern" />
       <div class="footer-container">
         <div>
-          <a href="./" class="footer_logo">
+          <a href="./" class="footer_logo" id="scrollToTopBtn">
             <img
               src="./images/home-page-images/logo.svg"
               alt="Global Travel Logo" />
@@ -274,26 +271,44 @@
         <div class="social-links1">
           <p class="contact">Connect With Us</p>
           <div class="icons">
-            <img src="./images/home-page-images/insta.svg" alt="" />
-            <img src="./images/home-page-images/fb.svg" alt="" />
-            <img src="./images/home-page-images/you-tube.svg" alt="" />
+            <a
+              href="https://www.instagram.com/globaltravelbangladesh?igsh=NW95ZWQ0MXBmaWo0">
+              <img src="./images/home-page-images/insta.svg" alt=""
+            /></a>
+            <a href="https://www.facebook.com/share/19PqbL4PcQ/?mibextid=wwXIfr"
+              ><img src="./images/home-page-images/fb.svg" alt=""
+            /></a>
+            <a
+              href="https://youtube.com/@globaltravelsbd22?si=EId8s3Dc6qkgH1Pb">
+              <img src="./images/home-page-images/you-tube.svg" alt=""
+            /></a>
           </div>
         </div>
         <div class="footer_quick_links">
           <p class="footer_quick_text">Quick Links</p>
           <ul>
             <li><a href="./">Home</a></li>
-            <li><a>Tour Packages</a></li>
-            <li><a>Services</a></li>
-            <li><a>Visa Requirements</a></li>
+            <li><a href="./tour-packages.html">Tour Packages</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./visa-requirements.html">Visa Requirements</a></li>
+            <li><a href="./mission.html">Our Mission</a></li>
           </ul>
         </div>
         <div class="social-links">
           <p class="contact">Connect With Us</p>
           <div class="icons">
-            <img src="./images/home-page-images/insta.svg" alt="" />
-            <img src="./images/home-page-images/fb.svg" alt="" />
-            <img src="./images/home-page-images/you-tube.svg" alt="" />
+            <a
+              href="https://www.instagram.com/globaltravelbangladesh?igsh=NW95ZWQ0MXBmaWo0">
+              <img src="./images/home-page-images/insta.svg" alt=""
+            /></a>
+            <a href="https://www.facebook.com/share/19PqbL4PcQ/?mibextid=wwXIfr"
+              ><img src="./images/home-page-images/fb.svg" alt=""
+            /></a>
+            <a
+              href="https://youtube.com/@globaltravelsbd22?si=EId8s3Dc6qkgH1Pb">
+              <img src="./images/home-page-images/you-tube.svg" alt=""
+            /></a>
           </div>
         </div>
       </div>
@@ -353,7 +368,7 @@
           <a href="./tour-packages.html" class="active">Tour Packages</a>
         </li>
         <li>
-          <a href="./">Visa Requirements</a>
+          <a href="./visa-requirements.html">Visa Requirements</a>
         </li>
 
         <li>
@@ -374,7 +389,7 @@
                 xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M5.625 8L10.625 13L15.625 8"
-                  stroke="#505673"
+                  stroke="#002d72"
                   stroke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round" />
@@ -388,16 +403,16 @@
                 <a class="dropdown-item" href="./mission.html">Our Mission</a>
               </li>
               <li>
+                <a class="dropdown-item" href="./ceo.html">CEO</a>
+              </li>
+              <li>
                 <a class="dropdown-item" href="./chief-advisor.html"
                   >Chief Advisor</a
                 >
               </li>
               <li>
-                <a class="dropdown-item" href="./ceo.html">CEO</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="./services.html"
-                  >Official services</a
+                <a class="dropdown-item" href="./organogram.html"
+                  >Official Organogram</a
                 >
               </li>
             </ul>
