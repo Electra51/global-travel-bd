@@ -307,6 +307,11 @@ nav {
 .tour_visa_bar {
   border-right: 1px dashed #bbbbbb;
 }
+.tour_details {
+  height: 811px;
+  overflow: auto;
+  /* padding: 5px 0; */
+}
 .tour-packages,
 .visa-requirements {
   flex: 1;
@@ -1050,6 +1055,7 @@ footer {
     border-right: 1px dashed #bbbbbb;
     display: none;
   }
+
   .tour-packages,
   .visa-requirements {
     flex: 1;
@@ -1181,7 +1187,7 @@ footer {
 
   /* other service section */
   .other_service {
-    margin-top: 70px !important;
+    margin-top: 100px !important;
     max-width: 343px;
     margin: 0 auto;
   }

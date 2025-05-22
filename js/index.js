@@ -625,3 +625,81 @@ document.querySelectorAll(".accordion-item").forEach((item) => {
     arrowIcon.classList.remove("rotate-icon");
   });
 });
+
+const tours = [
+  {
+    country: "Italy",
+    image: "../images/home-page-images/italy.png",
+    description:
+      "Embark on a journey through Italy's timeless beauty– from the romance of Venice to the elegance of....",
+    link: "tour-packages.html#italy-tour",
+  },
+  {
+    country: "Egypt",
+    image: "../images/home-page-images/egypt.png",
+    description:
+      "Unveiling the mysteries of ancient Egypt—where history, culture, and adventure meet at the Pyramids, temples....",
+    link: "tour-packages.html#egypt-tour",
+  },
+  {
+    country: "Philippines",
+    image: "../images/home-page-images/philippines.png",
+    description:
+      "Escape to the Philippines, where turquoise waters meet golden sands, lush jungles whisper adventure....",
+    link: "tour-packages.html#philipines-tour",
+  },
+  {
+    country: "Maldives & ShriLanka",
+    image: "../images/home-page-images/italy.png",
+    description:
+      "Double the Paradise! Dive into the turquoise bliss of the Maldives & explore the tropical wonders....",
+    link: "tour-packages.html#MalDives-tour",
+  },
+  {
+    country: "Kathmandu Pokhara",
+    image: "../images/home-page-images/italy.png",
+    description:
+      "গরু কাটা শেষে প্যাকেজ নিয়ে ঘুরে আসুন হিমালয় কন্যা নেপাল থেকে....",
+    link: "tour-packages.html#Kathmandu-tour",
+  },
+  {
+    country: "Maldives & Shilanka",
+    image: "../images/home-page-images/italy.png",
+    description: "Do Hurry and grab the chance to join the trip....",
+    link: "tour-packages.html#Shilanka-tour",
+  },
+  {
+    country: "Indonesia",
+    image: "../images/home-page-images/italy.png",
+    description:
+      "Eid Offer Discover the magic of Indonesia 🍀– where vibrant cultures, breathtaking....",
+    link: "tour-packages.html#Indonesia-tour",
+  },
+  {
+    country: "Jordan",
+    image: "../images/home-page-images/italy.png",
+    description:
+      "Discover the charm of Jordaan: where narrow, picturesque canals, quaint boutiques....",
+    link: "tour-packages.html#Jordan-tour",
+  },
+];
+
+const container = document.getElementById("tourDetailsContainer");
+
+tours.forEach((tour) => {
+  const card = document.createElement("div");
+  card.className = "tour_visa_card";
+
+  card.innerHTML = `
+    <div class="tour_visa_card_img">
+      <img src="${tour.image}" alt="${tour.country}" />
+    </div>
+    <p class="tour_visa_card_title">${tour.country}</p>
+    <p class="tour_visa_card_description">
+      ${tour.description}
+      <a href="${tour.link}">SeeMore</a>
+    </p>
+  `;
+
+  container.appendChild(card);
+});

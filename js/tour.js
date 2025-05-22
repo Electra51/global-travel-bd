@@ -68,7 +68,7 @@ const tours = [
     title: "Maldives & Shilanka",
     description: "Do Hurry and grab the chance to join the trip ✈️ 🌍",
     firstLetter: "D",
-    image: "../images/tour-page-images/kathmondu.png",
+    image: "../images/tour-page-images/shrinlangka.png",
     phones: ["+8801898205571", "+8801898205573"],
     grabText: "Grab Your Offer Now",
   },
@@ -78,7 +78,7 @@ const tours = [
     description:
       "Eid Offer Discover the magic of Indonesia 🍀– where vibrant cultures, breathtaking landscapes, and unforgettable adventures await at every turn. 🌍",
     firstLetter: "E",
-    image: "../images/tour-page-images/kathmondu.png",
+    image: "../images/tour-page-images/indonesia.png",
     phones: ["+8801898205571", "+8801898205573"],
     grabText: "Grab Your offer Just",
   },
@@ -88,7 +88,7 @@ const tours = [
     description:
       "Discover the charm of Jordaan: where narrow, picturesque canals, quaint boutiques, and cozy cafés create the perfect blend of history, culture, and modern vibrance—an Amsterdam neighborhood that invites every traveler to get lost and find their own slice of magic 🏚️🌍",
     firstLetter: "D",
-    image: "../images/tour-page-images/kathmondu.png",
+    image: "../images/tour-page-images/jordan.png",
     phones: ["+8801898205571", "+8801898205573"],
     grabText: "Grab Your offer Just",
   },
