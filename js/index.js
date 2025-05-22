@@ -146,7 +146,7 @@ const countries = [
     checklist: [
       "All Passport + Recent Passport with minimum 1 year validity",
       "Photo 35/45 size 2 copy",
-      "Visiting card",
+      "National Identity or Birth Certificate",
       "License if business with Notary",
       "Company official pad",
       "Job ID+NOC salary certificate + pay slip if job holder,salary statement",
