@@ -834,7 +834,600 @@ footer {
 
 @media (min-width: 375px) and (max-width: 480px) {
   header {
+    /* width: 375px; */
+    height: 101px;
+    margin-top: 0;
+    background: var(--color-headerMobile);
+    margin-bottom: 0 !important;
+    align-items: end;
+  }
+  nav {
     width: 375px;
+    height: 50px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 16px;
+  }
+  .logo {
+    width: 49px;
+    height: 42px;
+  }
+  .nav-btn {
+    display: none;
+  }
+  .nav_item-ul {
+    display: none;
+  }
+  .nav_item_for_mobile {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+  }
+  .nav_item_for_mobile svg {
+    cursor: pointer;
+  }
+  .dropdown-menu.show {
+    top: 38% !important;
+    left: -45px !important;
+    align-items: baseline;
+  }
+  /* Sidebar Menu Styles */
+  .mobile_menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-mobileMenubg);
+    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: left 0.3s ease-in-out;
+    z-index: 999;
+  }
+  .mobile_footer_pattarn {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .mobile_menu.open {
+    left: 0;
+  }
+  .menu_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    padding-top: 15px;
+  }
+  .mobile-logo {
+    width: 66px;
+  }
+  .close_btn {
+    cursor: pointer;
+  }
+  .menu_list {
+    list-style: none;
+    padding: 53px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 27px;
+    z-index: 999;
+  }
+  .menu_list li {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: var(--color-primary);
+  }
+  .menu_list li a {
+    list-style: none;
+    text-decoration: none;
+    color: var(--color-primary);
+  }
+  .menu_list li.active a {
+    color: var(--color-active);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  /* hero section */
+  .left_background {
+    display: none;
+  }
+  .right_background {
+    display: none;
+  }
+  .right_bottom_background {
+    height: 100px;
+  }
+  .other_service_right_background {
+    height: 100px;
+  }
+  .hero_right {
+    display: none;
+  }
+  .hero {
+    background-image: url(../images/home-page-images/hero-area-mobile.png);
+    margin-top: 20px;
+    max-width: 343px;
+    height: 389px;
+    padding: 18px 32px;
+    border-radius: 5px;
+    justify-content: center;
+  }
+  .hero_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 325px;
+  }
+  .hero_head_text {
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+  }
+  .hero_head_text2 {
+    font-size: 29px;
+    text-align: center;
+  }
+  .hero_details {
+    font-size: 14px;
+    margin-top: 12px !important;
+    width: 292px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 160%;
+    color: var(--color-secondary);
+    margin-bottom: 0px !important;
+  }
+  .book_btn {
+    height: 40px;
+    width: 161px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-top: 18px;
+  }
+  .stats {
+    margin-top: 30px;
+    gap: 30px;
+  }
+  .stat {
+    text-align: center;
+    width: 81px;
+    height: 53px;
+  }
+  .stat_number {
+    justify-content: center;
+    gap: 8px;
+  }
+  .stat_number p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 0 !important;
+  }
+  .stat_number svg {
+    height: 16px;
+    width: 15px;
+  }
+  .stat_p {
+    font-size: 12px;
+    text-align: start;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  /* tour and visa section */
+  .tour_and_visa_section {
+    max-width: 343px;
+    margin: 50px auto 0 auto !important;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: 1661px;
+  }
+  .tour_visa_bar {
+    border-right: 1px dashed #bbbbbb;
+    display: none;
+  }
+  .tour-packages,
+  .visa-requirements {
+    flex: 1;
+    max-width: 343px;
+  }
+  .country-content {
+    display: none;
+    margin-left: 30px;
+    color: #002d72;
+    font-weight: 500;
+  }
+  .country-item.expanded .country-content {
+    display: block;
+  }
+  .country-item .arrow-icon {
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  .country-item.expanded .arrow-icon {
+    transform: rotate(90deg);
+  }
+  .country-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+  }
+  .tour_visa_header {
+    font-size: 26px;
+    margin-bottom: 24px !important;
+    text-align: center;
+  }
+  .tour_visa_card {
+    height: 241px;
+    width: 343px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-bottom: 16px !important;
+    background: #fefefe;
+  }
+  .tour_visa_card_img {
+    width: 343px;
+    height: 142px;
+    border-radius: 10px;
+  }
+  .tour_visa_card_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .tour_visa_card_content {
+    margin-top: 12px;
+    margin-bottom: 0px !important;
+  }
+  .tour_visa_card_title {
+    font-size: 20px;
+  }
+  .tour_visa_card_description {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .tour_visa_card_description a {
+    font-size: 15px;
+    text-decoration: auto !important;
+  }
+  .tour_visa_search_box {
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 12px 0px #0d0a2c0f;
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px !important;
+    height: 48px;
+  }
+  .tour_visa_search_box input::placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: var(--color-primary);
+  }
+  input:focus {
+    outline: none;
+  }
+  .tour_visa_search_box input {
+    flex: 1;
+    border: none;
+    padding: 0px 16px;
+    font-size: 14px;
+  }
+  .search_icon {
+    background: linear-gradient(
+      38.41deg,
+      #ea6624 36.95%,
+      #ea6624 50.94%,
+      #eb6f22 58.97%,
+      #ef871c 72%,
+      #f08d1a 74.71%
+    );
+    height: 45px;
+    width: 45px;
+    border: none;
+    cursor: pointer;
+    border-bottom-left-radius: 32px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .visa_left_background {
+    position: absolute;
+    top: 1300px;
+    right: 0;
+    z-index: -1;
+    height: 100px;
+  }
+  .country-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+  }
+  .country-list-li {
+    font-size: 20px;
+  }
+
+  /* other service section */
+  .other_service {
+    margin-top: 100px !important;
+    max-width: 343px;
+    margin: 0 auto;
+  }
+  .other_service_head_text {
+    font-size: 26px;
+  }
+  .other_service_right_background {
+    position: absolute;
+    top: 2131px;
+    right: 0;
+    z-index: -1;
+  }
+  .other_service_card {
+    gap: 18px;
+  }
+  .other_service_card_seeAll {
+    font-size: 12px;
+  }
+  .other_service_details {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 23px;
+  }
+  .other_service_img {
+    width: 52px;
+    height: 55px;
+  }
+  .other_service_card {
+    width: 160px;
+    height: 135px;
+    border-radius: 11.85px;
+    border: 1px solid var(--color-active);
+    padding: 16px 16px;
+    background: var(--color-headerMobile);
+  }
+  .other_service_card_head_text {
+    font-size: 12px;
+    width: 129px;
+  }
+
+  /* why choose section */
+  .why_choose_section {
+    max-width: 343px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+
+    height: 710px;
+    background: rgb(237, 251, 255);
+    /* padding: 16px; */
+    height: 710px;
+    margin-top: 50px !important;
+  }
+  .why_choose {
+    max-width: 343px;
+    padding-left: 16px;
+    padding-top: 16px;
+    margin-top: 0px !important;
+  }
+  .why_choose_header {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 16px !important;
+    text-wrap: wrap;
+  }
+  .why_choose_point {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 160%;
+    letter-spacing: 0%;
+    color: var(--color-secondary);
+  }
+  .why_choose_description {
+    gap: 12px;
+  }
+  .ready_to_travel {
+    display: none;
+  }
+
+  /* about section */
+  .about_container {
+    margin-top: 50px !important;
+    max-width: 343px;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  .about_details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 29px;
+    margin-top: 25px;
+  }
+  .about_left {
+    width: 344px;
+    height: 382px;
+    border-radius: 8px;
+  }
+  .about_left img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  .about_right {
+    width: 344px;
+  }
+  .about_right_text {
+    font-weight: 400;
+  }
+  .about_right_text2 {
+    font-weight: 400;
+  }
+  .about_right_text span {
+    font-weight: 400;
+  }
+  .about_left_background {
+    display: none;
+  }
+  .about_right_background {
+    display: none;
+  }
+
+  /* footer section */
+  footer {
+    margin-top: 50px;
+    background-color: var(--color-mobileMenubg);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 548px !important;
+    position: relative;
+  }
+  .bg-footer-pattern {
+    border-top-right-radius: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 344px;
+    margin: 0 auto;
+    gap: 14px;
+    height: calc(499px - 64px);
+    padding: 24px 22px;
+  }
+  .footer-left {
+    flex: 1;
+  }
+  .footer_logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 99;
+    position: relative;
+  }
+  .footer_logo img {
+    width: 151px;
+    height: 124px;
+  }
+  .footer_logo h2 {
+    font-weight: 600;
+    font-size: 24px;
+  }
+  .footer_quick_text {
+    font-size: 20px;
+    margin-top: 36px;
+  }
+  .footer_quick_links {
+    z-index: 999;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer_quick_links ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 46px;
+    row-gap: 16px;
+    margin-top: 20px;
+  }
+  .footer_quick_links ul li a {
+    color: var(--color-secondary);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0%;
+    text-wrap: nowrap;
+  }
+  .social-links1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    position: relative;
+  }
+  .social-links {
+    display: none;
+    position: relative;
+    z-index: 999;
+  }
+  .contact {
+    font-size: 12px;
+  }
+  .icons {
+    margin-top: 12px;
+    font-size: 30px;
+    margin-right: 15px;
+    transition: 0.3s;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 22px;
+  }
+  .icons img {
+    height: 30px;
+    width: 30px;
+  }
+  .footer-bottom {
+    margin-top: 30px;
+    border-top: 1px solid var(--color-active);
+  }
+  .footer-bottom-container {
+    max-width: 344px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+  }
+  .footer_bottom_p {
+    font-weight: 300;
+    text-align: center;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0%;
+    color: var(--color-secondary);
+  }
+  .scroll-top {
+    display: none;
+  }
+}
+
+@media (max-width: 360px) {
+  header {
+    /* width: 375px; */
     height: 101px;
     margin-top: 0;
     background: var(--color-headerMobile);

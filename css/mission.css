@@ -409,7 +409,316 @@ footer {
 }
 @media (min-width: 375px) and (max-width: 480px) {
   header {
+    /* width: 375px; */
+    height: 101px;
+    margin-top: 0;
+    background: var(--color-headerMobile);
+    margin-bottom: 0 !important;
+    align-items: end;
+  }
+  nav {
     width: 375px;
+    height: 50px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 16px;
+  }
+  .logo {
+    width: 49px;
+    height: 42px;
+  }
+  .nav-btn {
+    display: none;
+  }
+  .nav_item-ul {
+    display: none;
+  }
+  .nav_item_for_mobile {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+  }
+  .nav_item_for_mobile svg {
+    cursor: pointer;
+  }
+  .dropdown-menu.show {
+    top: 38% !important;
+    left: -45px !important;
+    align-items: baseline;
+  }
+  /* Sidebar Menu Styles */
+  .mobile_menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    /* background-image: url(../images/home-page-images/hero-area-mobile.png); */
+    background-color: var(--color-mobileMenubg);
+    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: left 0.3s ease-in-out;
+    z-index: 999;
+  }
+  .mobile_footer_pattarn {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .mobile_menu.open {
+    left: 0;
+  }
+  .menu_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    padding-top: 15px;
+  }
+  .mobile-logo {
+    width: 66px;
+  }
+  .close_btn {
+    cursor: pointer;
+  }
+  .menu_list {
+    list-style: none;
+    padding: 53px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 27px;
+    z-index: 999;
+  }
+  .menu_list li {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: var(--color-primary);
+  }
+  .menu_list li a {
+    list-style: none;
+    text-decoration: none;
+    color: var(--color-primary);
+  }
+  .menu_list li.active a {
+    color: var(--color-active);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  /* pattern start */
+  .left_background {
+    height: 100px;
+  }
+  .right_background {
+    height: 100px;
+  }
+  .left_bottom_background {
+    height: 100px;
+  }
+  .right_bottom_background {
+    height: 100px;
+  }
+
+  /* mission content */
+  .mission_contant {
+    max-width: 343px;
+    margin: 30px auto 0 auto;
+  }
+  .mission-hero-btn {
+    margin-top: 20px;
+  }
+  .mission-description {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  .mission_hero_details2 {
+    display: none;
+  }
+  .mission_hero_details_mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .page_head_text {
+    font-size: 30px;
+  }
+  .mission_hero {
+    gap: 40px;
+  }
+  .mission_hero_details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 20px;
+  }
+
+  .mission_hero_details_left {
+    width: 343px;
+    height: 352px;
+    border-radius: 16px;
+  }
+  .mission_hero_details_right_title {
+    font-size: 26px;
+  }
+  .mission_hero_details_right {
+    width: 343px;
+  }
+  .mission_hero_details_right_para {
+    font-size: 14px;
+  }
+  .mission_hero_details_right_para span {
+    font-weight: 400;
+    font-size: 30px;
+  }
+
+  /* footer section */
+  footer {
+    margin-top: 50px;
+    background-color: var(--color-mobileMenubg);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 548px !important;
+    position: relative;
+  }
+  .bg-footer-pattern {
+    border-top-right-radius: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 344px;
+    margin: 0 auto;
+    gap: 14px;
+    height: calc(499px - 64px);
+    padding: 24px 22px;
+  }
+  .footer-left {
+    flex: 1;
+    /* min-width: 300px; */
+  }
+  .footer_logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 99;
+    position: relative;
+  }
+  .footer_logo img {
+    width: 151px;
+    height: 124px;
+  }
+  .footer_logo h2 {
+    font-weight: 600;
+    font-size: 24px;
+  }
+  .footer_quick_text {
+    font-size: 20px;
+    margin-top: 36px;
+  }
+  .footer_quick_links {
+    z-index: 999;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer_quick_links ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 46px;
+    row-gap: 16px;
+    margin-top: 20px;
+  }
+  .footer_quick_links ul li a {
+    color: var(--color-secondary);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0%;
+    text-wrap: nowrap;
+  }
+  .social-links1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    position: relative;
+  }
+  .social-links {
+    display: none;
+    position: relative;
+    z-index: 999;
+  }
+  .contact {
+    font-size: 12px;
+  }
+  .icons {
+    margin-top: 12px;
+    font-size: 30px;
+    margin-right: 15px;
+    transition: 0.3s;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 22px;
+  }
+  .icons img {
+    height: 30px;
+    width: 30px;
+  }
+  .footer-bottom {
+    margin-top: 30px;
+    border-top: 1px solid var(--color-active);
+  }
+  .footer-bottom-container {
+    max-width: 344px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+  }
+  .footer_bottom_p {
+    font-weight: 300;
+    text-align: center;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0%;
+    color: var(--color-secondary);
+  }
+  .scroll-top {
+    display: none;
+  }
+}
+
+@media (max-width: 360px) {
+  header {
+    /* width: 375px; */
     height: 101px;
     margin-top: 0;
     background: var(--color-headerMobile);
