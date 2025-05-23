@@ -33,7 +33,7 @@ html {
   scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
-  width: 3px;
+  width: 1px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -661,10 +661,13 @@ footer {
     margin-top: 30px;
     gap: 20px;
   }
+  .contact_hero_details_sub_title {
+    padding: 0 10px;
+  }
   .contact_hero_details_para {
     font-size: 15px;
     margin-top: 0px;
-    padding: 0 9px;
+    padding: 0 19px;
   }
   .form-inputs {
     display: flex;
