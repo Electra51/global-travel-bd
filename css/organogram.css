@@ -128,7 +128,7 @@ nav {
     #ef871c 72%,
     #f08d1a 74.71%
   );
-  box-shadow: 0px 0px 1px 2px #884b0e33;
+  box-shadow: 0px 0px 1px 2px #884b0e33 !important;
   box-shadow: 0px 0px 0px 2px #7c350f33 inset;
   box-shadow: 0px -6px 7.1px 0px #ea6824 inset;
   border: 1px solid #eb6c23;
@@ -1085,5 +1085,47 @@ footer {
   }
   .scroll-top {
     display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* navbar */
+  header {
+    height: 70px;
+    margin-top: 40px;
+    margin-bottom: 20px !important;
+  }
+  nav {
+    max-width: 768px;
+    gap: 25px;
+  }
+  .logo {
+    width: 67px;
+    height: 56px;
+  }
+  .nav_item-ul {
+    gap: 19px;
+    margin-bottom: 0px !important;
+    padding-left: 0;
+  }
+  .nav_item-ul-li-a {
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .contact_btn {
+    width: 86px;
+    height: 35px;
+    font-weight: 500;
+    font-size: 12px;
+    border-radius: 5px;
+  }
+  .nav_item_for_mobile {
+    display: none;
+  }
+  .mobile_menu {
+    display: none;
+  }
+  .dropdown-item {
+    font-size: 14px !important;
   }
 }
