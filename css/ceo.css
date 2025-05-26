@@ -128,7 +128,7 @@ nav {
     #ef871c 72%,
     #f08d1a 74.71%
   );
-  box-shadow: 0px 0px 1px 2px #884b0e33;
+  box-shadow: 0px 0px 1px 2px #884b0e33 !important;
   box-shadow: 0px 0px 0px 2px #7c350f33 inset;
   box-shadow: 0px -6px 7.1px 0px #ea6824 inset;
   border: 1px solid #eb6c23;
@@ -982,7 +982,27 @@ footer {
     font-weight: 500 !important;
     line-height: 111% !important;
   }
-
+  .advisor_contant {
+    max-width: 768px;
+  }
+  .advisor_img {
+    width: 345px;
+  }
+  .advisor_right_part {
+    width: 345px;
+  }
+  .page_head_text {
+    font-size: 27px;
+  }
+  .advisor-designation {
+    font-size: 17px;
+  }
+  .advisor-advice-p span {
+    font-size: 28px;
+  }
+  .advisor-advice-p {
+    font-size: 14px;
+  }
   /* footer section */
   footer {
     margin-top: 90px;
