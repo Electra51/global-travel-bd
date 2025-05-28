@@ -633,7 +633,7 @@ const countries = [
   {
     name: "Cambodia",
     seeMore: "cambodia-visa",
-    country_img: "../images/visa-requirement-images/Canada.png",
+    country_img: "../images/visa-requirement-images/cambodia.png",
     country_details:
       "Cambodia is a soulful destination where ancient ruins and resilient spirit leave lasting impressions. The Angkor Wat temple complex is the country's crown jewel—a vast archaeological wonder that draws travelers from around the world. Nearby, Siem Reap offers lively markets, traditional dance shows, and friendly hospitality. Phnom Penh, the capital, balances royal palaces with sobering sites like the Killing Fields and S-21 Museum.\nCambodian culture reflects Buddhist calm, Khmer pride, and a deep connection to the land. Local villages and floating communities on the Tonle Sap Lake offer glimpses into traditional life. Khmer cuisine is flavorful and underrated—try amok curry or kuy teav noodles. Despite its turbulent past, Cambodia shines with resilience, kindness, and cultural beauty that touches the heart of every visitor.",
     checklist: [
